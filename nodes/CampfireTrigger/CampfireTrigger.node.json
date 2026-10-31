@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-campfire.campfireTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Finance & Accounting"],
+	"alias": ["ERP", "Accounting", "General Ledger", "Accounts Payable", "Accounts Receivable", "Revenue Recognition", "Journal Entry"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.campfire.ai/quickstart"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.campfire.ai/guides/webhooks"
+			}
+		]
+	}
+}

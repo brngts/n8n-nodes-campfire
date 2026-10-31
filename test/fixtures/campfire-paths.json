@@ -1,0 +1,7708 @@
+{
+	"/ca/api/account": {
+		"GET": {
+			"query": [
+				"chart_of_accounts_account",
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"aba_routing_number",
+				"account_cashflow_classification",
+				"account_id",
+				"account_subtype",
+				"account_type",
+				"available_balance",
+				"cashflow_classification_name",
+				"chart_of_accounts_account",
+				"chart_of_accounts_account_name",
+				"check_offset_x_mm",
+				"check_offset_y_mm",
+				"check_print_company_block",
+				"check_print_enabled",
+				"check_print_payee_address",
+				"check_stock_layout",
+				"check_stock_prenumbered",
+				"created_at",
+				"currency",
+				"current_balance",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"entity",
+				"entity_name",
+				"external_account_id",
+				"id",
+				"in_cash_total",
+				"institution_id",
+				"is_deleted",
+				"is_disconnected",
+				"last_modified_at",
+				"name",
+				"nickname",
+				"source",
+				"status",
+				"subtype_name",
+				"swift_bic",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"type",
+				"type_name"
+			]
+		}
+	},
+	"/ca/api/account/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"aba_routing_number",
+				"account_cashflow_classification",
+				"account_id",
+				"account_subtype",
+				"account_type",
+				"available_balance",
+				"cashflow_classification_name",
+				"chart_of_accounts_account",
+				"chart_of_accounts_account_name",
+				"check_offset_x_mm",
+				"check_offset_y_mm",
+				"check_print_company_block",
+				"check_print_enabled",
+				"check_print_payee_address",
+				"check_stock_layout",
+				"check_stock_prenumbered",
+				"created_at",
+				"currency",
+				"current_balance",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"entity",
+				"entity_name",
+				"external_account_id",
+				"id",
+				"in_cash_total",
+				"institution_id",
+				"is_deleted",
+				"is_disconnected",
+				"last_modified_at",
+				"name",
+				"nickname",
+				"source",
+				"status",
+				"subtype_name",
+				"swift_bic",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"type",
+				"type_name"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"aba_routing_number",
+				"account_cashflow_classification",
+				"account_id",
+				"account_subtype",
+				"account_type",
+				"available_balance",
+				"cashflow_classification_name",
+				"chart_of_accounts_account",
+				"chart_of_accounts_account_name",
+				"check_offset_x_mm",
+				"check_offset_y_mm",
+				"check_print_company_block",
+				"check_print_enabled",
+				"check_print_payee_address",
+				"check_stock_layout",
+				"check_stock_prenumbered",
+				"created_at",
+				"currency",
+				"current_balance",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"entity",
+				"entity_name",
+				"external_account_id",
+				"id",
+				"in_cash_total",
+				"institution_id",
+				"is_deleted",
+				"is_disconnected",
+				"last_modified_at",
+				"name",
+				"nickname",
+				"source",
+				"status",
+				"subtype_name",
+				"swift_bic",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"type",
+				"type_name"
+			]
+		},
+		"DELETE": {
+			"query": [
+				"new_account"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/account/{id}/delete": {
+		"POST": {
+			"query": [
+				"new_account"
+			],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/ca/api/account/totals": {
+		"GET": {
+			"query": [
+				"include_deleted"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/balance-sheet/comparative": {
+		"GET": {
+			"query": [
+				"cadence",
+				"entity",
+				"entity_rollup",
+				"group_by"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/bank-feed/{account_id}": {
+		"POST": {
+			"query": [],
+			"body": [
+				"available_balance",
+				"balance",
+				"balance_as_of_date",
+				"transactions"
+			]
+		}
+	},
+	"/ca/api/cash-basis": {
+		"GET": {
+			"query": [
+				"all_time",
+				"cadence",
+				"end_date",
+				"entity",
+				"entity_rollup",
+				"export",
+				"group",
+				"group_by",
+				"rollup_totals",
+				"start_date",
+				"use_book_values"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/cash-basis-operating-statement": {
+		"GET": {
+			"query": [
+				"all_time",
+				"cadence",
+				"end_date",
+				"entity",
+				"entity_rollup",
+				"export",
+				"group",
+				"group_by",
+				"rollup_totals",
+				"start_date"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/cash-operating-statement/transactions": {
+		"GET": {
+			"query": [
+				"end_date",
+				"start_date"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/custom-reports": {
+		"GET": {
+			"query": [
+				"data_type",
+				"limit",
+				"offset"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/custom-reports/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/ca/api/custom-reports/{id}/data": {
+		"GET": {
+			"query": [
+				"account",
+				"account_subtype",
+				"account_type",
+				"aggregation_fields",
+				"bank",
+				"currency",
+				"department",
+				"end_date",
+				"entity",
+				"group_fields",
+				"group_keys",
+				"include_totals",
+				"journal_type",
+				"limit",
+				"mode",
+				"no_department",
+				"no_tag",
+				"no_vendor",
+				"offset",
+				"pivot_fields",
+				"shouldPivot",
+				"show_empty_lines",
+				"sort",
+				"start_date",
+				"tag",
+				"tag_groups",
+				"vendor"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/file": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/file/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"app",
+				"created_at",
+				"created_by",
+				"created_by_email",
+				"created_by_name",
+				"customer",
+				"deleted_at",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"model",
+				"name",
+				"object_id",
+				"s3_content_length",
+				"s3_content_type",
+				"s3_path",
+				"url"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"app",
+				"created_at",
+				"created_by",
+				"created_by_email",
+				"created_by_name",
+				"customer",
+				"deleted_at",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"model",
+				"name",
+				"object_id",
+				"s3_content_length",
+				"s3_content_type",
+				"s3_path",
+				"url"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/ca/api/file/{id}/temp-download-url": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/ca/api/file/upload": {
+		"POST": {
+			"query": [
+				"model",
+				"object_id"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/get_balance_sheet": {
+		"GET": {
+			"query": [
+				"cadence",
+				"end_date",
+				"entity",
+				"entity_rollup",
+				"group_by",
+				"start_date"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/get_cash_flow": {
+		"GET": {
+			"query": [
+				"cadence",
+				"end_date",
+				"entity",
+				"entity_rollup",
+				"group_by",
+				"start_date"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/get_cash_flow_activity": {
+		"GET": {
+			"query": [
+				"cadence",
+				"end_date",
+				"entity",
+				"entity_rollup",
+				"start_date"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/get_cash_flow_v2": {
+		"GET": {
+			"query": [
+				"cadence",
+				"end_date",
+				"entity",
+				"entity_rollup",
+				"start_date"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/get_income_statement": {
+		"GET": {
+			"query": [
+				"cadence",
+				"end_date",
+				"entity",
+				"entity_rollup",
+				"group_by",
+				"start_date"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/get_trial_balance": {
+		"GET": {
+			"query": [
+				"basis",
+				"department",
+				"end_date",
+				"entity",
+				"entity_rollup",
+				"group_by",
+				"income_statement_basis",
+				"start_date"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/income-statement/comparative": {
+		"GET": {
+			"query": [
+				"cadence",
+				"entity",
+				"entity_rollup",
+				"group_by"
+			],
+			"body": []
+		}
+	},
+	"/ca/api/transaction": {
+		"GET": {
+			"query": [
+				"exclude_drafts",
+				"include_deleted",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"account",
+				"account_name",
+				"amount",
+				"amount_native",
+				"assigned",
+				"bank_account_has_gl_account",
+				"bank_description",
+				"created_at",
+				"currency",
+				"customer",
+				"date_month",
+				"date_year",
+				"deleted_at",
+				"entity_name",
+				"excluded",
+				"external_memo",
+				"external_transaction_id",
+				"id",
+				"intercompany_journal",
+				"is_deleted",
+				"journal",
+				"journal_order",
+				"kind",
+				"last_modified_at",
+				"merchant_id",
+				"merchant_name",
+				"merchant_nickname",
+				"metadata",
+				"note",
+				"posted_at",
+				"reconciliation_report",
+				"reconciliation_report_ending_date",
+				"status",
+				"transaction_id"
+			]
+		}
+	},
+	"/ca/api/transaction/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"account",
+				"account_name",
+				"amount",
+				"amount_native",
+				"assigned",
+				"bank_account_has_gl_account",
+				"bank_description",
+				"created_at",
+				"currency",
+				"customer",
+				"date_month",
+				"date_year",
+				"deleted_at",
+				"entity_name",
+				"excluded",
+				"external_memo",
+				"external_transaction_id",
+				"id",
+				"intercompany_journal",
+				"is_deleted",
+				"journal",
+				"journal_order",
+				"kind",
+				"last_modified_at",
+				"merchant_id",
+				"merchant_name",
+				"merchant_nickname",
+				"metadata",
+				"note",
+				"posted_at",
+				"reconciliation_report",
+				"reconciliation_report_ending_date",
+				"status",
+				"transaction_id"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"account",
+				"account_name",
+				"amount",
+				"amount_native",
+				"assigned",
+				"bank_account_has_gl_account",
+				"bank_description",
+				"created_at",
+				"currency",
+				"customer",
+				"date_month",
+				"date_year",
+				"deleted_at",
+				"entity_name",
+				"excluded",
+				"external_memo",
+				"external_transaction_id",
+				"id",
+				"intercompany_journal",
+				"is_deleted",
+				"journal",
+				"journal_order",
+				"kind",
+				"last_modified_at",
+				"merchant_id",
+				"merchant_name",
+				"merchant_nickname",
+				"metadata",
+				"note",
+				"posted_at",
+				"reconciliation_report",
+				"reconciliation_report_ending_date",
+				"status",
+				"transaction_id"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/ca/api/user_currency": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"id",
+				"is_custom",
+				"is_deleted",
+				"last_modified_at",
+				"name"
+			]
+		}
+	},
+	"/ca/api/user_currency/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"id",
+				"is_custom",
+				"is_deleted",
+				"last_modified_at",
+				"name"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"id",
+				"is_custom",
+				"is_deleted",
+				"last_modified_at",
+				"name"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/ca/api/user_currency/rate": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/ca/api/user_currency/with_rate": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/ca/api/v1/custom-fields": {
+		"GET": {
+			"query": [
+				"app",
+				"include_deleted",
+				"is_active",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"model",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"app",
+				"created_at",
+				"deleted_at",
+				"display_order",
+				"field_type",
+				"id",
+				"include_on_invoice",
+				"is_active",
+				"is_deleted",
+				"is_required",
+				"label",
+				"last_modified_at",
+				"model",
+				"name",
+				"options",
+				"updated_at"
+			]
+		}
+	},
+	"/ca/api/v1/custom-fields/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"app",
+				"created_at",
+				"deleted_at",
+				"display_order",
+				"field_type",
+				"id",
+				"include_on_invoice",
+				"is_active",
+				"is_deleted",
+				"is_required",
+				"label",
+				"last_modified_at",
+				"model",
+				"name",
+				"options",
+				"updated_at"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"app",
+				"created_at",
+				"deleted_at",
+				"display_order",
+				"field_type",
+				"id",
+				"include_on_invoice",
+				"is_active",
+				"is_deleted",
+				"is_required",
+				"label",
+				"last_modified_at",
+				"model",
+				"name",
+				"options",
+				"updated_at"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/ca/api/v1/custom-fields/reorder": {
+		"POST": {
+			"query": [],
+			"body": [
+				"field_order"
+			]
+		}
+	},
+	"/coa/api/account": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"account_cashflow_classification",
+				"account_id",
+				"account_subtype",
+				"account_type",
+				"balance_ytd",
+				"created_at",
+				"currency",
+				"current_balance",
+				"current_balance_book",
+				"customer",
+				"default_department",
+				"default_tags",
+				"deleted_at",
+				"description",
+				"external_id",
+				"has_associated_data",
+				"id",
+				"include_in_eliminations",
+				"include_in_revaluations",
+				"is_deleted",
+				"last_modified_at",
+				"last_recompute_balance_at",
+				"lineage_array",
+				"lock_recompute_balance_key",
+				"name",
+				"name_and_number",
+				"nickname",
+				"number",
+				"parent",
+				"parent_bank_account",
+				"parent_name_and_number",
+				"protected",
+				"reconciliation_ending_balance",
+				"reconciliation_ending_date",
+				"skip_subledger_validation",
+				"sort_key",
+				"source",
+				"status"
+			]
+		}
+	},
+	"/coa/api/account/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"account_cashflow_classification",
+				"account_id",
+				"account_subtype",
+				"account_type",
+				"balance_ytd",
+				"created_at",
+				"currency",
+				"current_balance",
+				"current_balance_book",
+				"customer",
+				"default_department",
+				"default_tags",
+				"deleted_at",
+				"description",
+				"external_id",
+				"has_associated_data",
+				"id",
+				"include_in_eliminations",
+				"include_in_revaluations",
+				"is_deleted",
+				"last_modified_at",
+				"last_recompute_balance_at",
+				"lineage_array",
+				"lock_recompute_balance_key",
+				"name",
+				"name_and_number",
+				"nickname",
+				"number",
+				"parent",
+				"parent_bank_account",
+				"parent_name_and_number",
+				"protected",
+				"reconciliation_ending_balance",
+				"reconciliation_ending_date",
+				"skip_subledger_validation",
+				"sort_key",
+				"source",
+				"status"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"account_cashflow_classification",
+				"account_id",
+				"account_subtype",
+				"account_type",
+				"balance_ytd",
+				"created_at",
+				"currency",
+				"current_balance",
+				"current_balance_book",
+				"customer",
+				"default_department",
+				"default_tags",
+				"deleted_at",
+				"description",
+				"external_id",
+				"has_associated_data",
+				"id",
+				"include_in_eliminations",
+				"include_in_revaluations",
+				"is_deleted",
+				"last_modified_at",
+				"last_recompute_balance_at",
+				"lineage_array",
+				"lock_recompute_balance_key",
+				"name",
+				"name_and_number",
+				"nickname",
+				"number",
+				"parent",
+				"parent_bank_account",
+				"parent_name_and_number",
+				"protected",
+				"reconciliation_ending_balance",
+				"reconciliation_ending_date",
+				"skip_subledger_validation",
+				"sort_key",
+				"source",
+				"status"
+			]
+		},
+		"DELETE": {
+			"query": [
+				"new_account"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/account/{id}/delete": {
+		"POST": {
+			"query": [
+				"new_account"
+			],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/account/balance-sheet": {
+		"GET": {
+			"query": [
+				"account",
+				"account_subtype",
+				"account_type",
+				"include_cost_allocation",
+				"include_inactive",
+				"limit",
+				"offset",
+				"q"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"account_cashflow_classification",
+				"account_id",
+				"account_subtype",
+				"account_type",
+				"balance_ytd",
+				"created_at",
+				"currency",
+				"current_balance",
+				"current_balance_book",
+				"customer",
+				"default_department",
+				"default_tags",
+				"deleted_at",
+				"description",
+				"external_id",
+				"has_associated_data",
+				"id",
+				"include_in_eliminations",
+				"include_in_revaluations",
+				"is_deleted",
+				"last_modified_at",
+				"last_recompute_balance_at",
+				"lineage_array",
+				"lock_recompute_balance_key",
+				"name",
+				"name_and_number",
+				"nickname",
+				"number",
+				"parent",
+				"parent_bank_account",
+				"parent_name_and_number",
+				"protected",
+				"reconciliation_ending_balance",
+				"reconciliation_ending_date",
+				"skip_subledger_validation",
+				"sort_key",
+				"source",
+				"status"
+			]
+		}
+	},
+	"/coa/api/account/income-statement": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"account_cashflow_classification",
+				"account_id",
+				"account_subtype",
+				"account_type",
+				"balance_ytd",
+				"created_at",
+				"currency",
+				"current_balance",
+				"current_balance_book",
+				"customer",
+				"default_department",
+				"default_tags",
+				"deleted_at",
+				"description",
+				"external_id",
+				"has_associated_data",
+				"id",
+				"include_in_eliminations",
+				"include_in_revaluations",
+				"is_deleted",
+				"last_modified_at",
+				"last_recompute_balance_at",
+				"lineage_array",
+				"lock_recompute_balance_key",
+				"name",
+				"name_and_number",
+				"nickname",
+				"number",
+				"parent",
+				"parent_bank_account",
+				"parent_name_and_number",
+				"protected",
+				"reconciliation_ending_balance",
+				"reconciliation_ending_date",
+				"skip_subledger_validation",
+				"sort_key",
+				"source",
+				"status"
+			]
+		}
+	},
+	"/coa/api/budgets": {
+		"GET": {
+			"query": [
+				"entity",
+				"entity_name",
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset",
+				"q",
+				"sort"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"breakdown_type",
+				"cadence",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"description",
+				"end_date",
+				"entity",
+				"entity_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"name",
+				"periods",
+				"prior_end_date",
+				"prior_start_date",
+				"start_date",
+				"tag_group_ids",
+				"tag_ids",
+				"tags"
+			]
+		}
+	},
+	"/coa/api/budgets/{budget_pk}/accounts": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"account",
+				"account_lineage",
+				"account_name",
+				"amount",
+				"budget",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"period"
+			]
+		}
+	},
+	"/coa/api/budgets/{budget_pk}/accounts/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"account",
+				"account_lineage",
+				"account_name",
+				"amount",
+				"budget",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"period"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"account",
+				"account_lineage",
+				"account_name",
+				"amount",
+				"budget",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"period"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/budgets/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"breakdown_type",
+				"cadence",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"description",
+				"end_date",
+				"entity",
+				"entity_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"name",
+				"periods",
+				"prior_end_date",
+				"prior_start_date",
+				"start_date",
+				"tag_group_ids",
+				"tag_ids",
+				"tags"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"breakdown_type",
+				"cadence",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"description",
+				"end_date",
+				"entity",
+				"entity_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"name",
+				"periods",
+				"prior_end_date",
+				"prior_start_date",
+				"start_date",
+				"tag_group_ids",
+				"tag_ids",
+				"tags"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/chart-account-settings": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"accounts_payable",
+				"accounts_payable_name_and_number",
+				"accounts_receivable",
+				"accounts_receivable_name_and_number",
+				"accrued_discount_account",
+				"accrued_discount_account_name_and_number",
+				"accrued_revenue",
+				"accrued_revenue_name_and_number",
+				"bad_debt_account",
+				"bad_debt_account_name_and_number",
+				"cash_in_transit",
+				"cash_in_transit_name_and_number",
+				"check_clearing",
+				"check_clearing_name_and_number",
+				"cta_account",
+				"cta_account_name_and_number",
+				"customer",
+				"default_clearing",
+				"default_clearing_name_and_number",
+				"deferred_processing_fees",
+				"deferred_processing_fees_name_and_number",
+				"deferred_revenue",
+				"deferred_revenue_name_and_number",
+				"discount_account",
+				"discount_account_name_and_number",
+				"dispute_expense_account",
+				"dispute_expense_account_name_and_number",
+				"dispute_fee_account",
+				"dispute_reinstatement_account",
+				"dispute_reinstatement_account_name_and_number",
+				"disputed_receivable_account",
+				"enable_mid_month_convention",
+				"fallback_revenue",
+				"fallback_revenue_name_and_number",
+				"fixed_asset_disposal",
+				"fixed_asset_disposal_name_and_number",
+				"fixed_asset_impairment_loss",
+				"fixed_asset_impairment_loss_name_and_number",
+				"fold_retained_earnings",
+				"id",
+				"mid_month_threshold",
+				"mid_month_threshold_for_prepaids",
+				"oci_translation_account",
+				"oci_translation_account_name_and_number",
+				"payout_account",
+				"payout_account_name_and_number",
+				"platform_fees",
+				"platform_fees_name_and_number",
+				"processing_fees",
+				"processing_fees_name_and_number",
+				"realized_gain_loss",
+				"realized_gain_loss_name_and_number",
+				"recognize_discounts_as_contra_revenue",
+				"refund_account",
+				"refund_account_name_and_number",
+				"retained_earnings",
+				"retained_earnings_name_and_number",
+				"rounding_account",
+				"rounding_account_name_and_number",
+				"split_eliminations_by_department",
+				"split_invoice_payments_by_line",
+				"tax_account",
+				"tax_account_name_and_number",
+				"unapplied_credits",
+				"unapplied_credits_name_and_number",
+				"unapplied_debits",
+				"unapplied_debits_name_and_number",
+				"unbilled_discount_account",
+				"unbilled_discount_account_name_and_number",
+				"unbilled_revenue",
+				"unbilled_revenue_name_and_number",
+				"uncategorized",
+				"uncategorized_name_and_number",
+				"unrealized_gain_loss",
+				"unrealized_gain_loss_name_and_number",
+				"use_whole_month_accounting_for_prepaids"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"accounts_payable",
+				"accounts_payable_name_and_number",
+				"accounts_receivable",
+				"accounts_receivable_name_and_number",
+				"accrued_discount_account",
+				"accrued_discount_account_name_and_number",
+				"accrued_revenue",
+				"accrued_revenue_name_and_number",
+				"bad_debt_account",
+				"bad_debt_account_name_and_number",
+				"cash_in_transit",
+				"cash_in_transit_name_and_number",
+				"check_clearing",
+				"check_clearing_name_and_number",
+				"cta_account",
+				"cta_account_name_and_number",
+				"customer",
+				"default_clearing",
+				"default_clearing_name_and_number",
+				"deferred_processing_fees",
+				"deferred_processing_fees_name_and_number",
+				"deferred_revenue",
+				"deferred_revenue_name_and_number",
+				"discount_account",
+				"discount_account_name_and_number",
+				"dispute_expense_account",
+				"dispute_expense_account_name_and_number",
+				"dispute_fee_account",
+				"dispute_reinstatement_account",
+				"dispute_reinstatement_account_name_and_number",
+				"disputed_receivable_account",
+				"enable_mid_month_convention",
+				"fallback_revenue",
+				"fallback_revenue_name_and_number",
+				"fixed_asset_disposal",
+				"fixed_asset_disposal_name_and_number",
+				"fixed_asset_impairment_loss",
+				"fixed_asset_impairment_loss_name_and_number",
+				"fold_retained_earnings",
+				"id",
+				"mid_month_threshold",
+				"mid_month_threshold_for_prepaids",
+				"oci_translation_account",
+				"oci_translation_account_name_and_number",
+				"payout_account",
+				"payout_account_name_and_number",
+				"platform_fees",
+				"platform_fees_name_and_number",
+				"processing_fees",
+				"processing_fees_name_and_number",
+				"realized_gain_loss",
+				"realized_gain_loss_name_and_number",
+				"recognize_discounts_as_contra_revenue",
+				"refund_account",
+				"refund_account_name_and_number",
+				"retained_earnings",
+				"retained_earnings_name_and_number",
+				"rounding_account",
+				"rounding_account_name_and_number",
+				"split_eliminations_by_department",
+				"split_invoice_payments_by_line",
+				"tax_account",
+				"tax_account_name_and_number",
+				"unapplied_credits",
+				"unapplied_credits_name_and_number",
+				"unapplied_debits",
+				"unapplied_debits_name_and_number",
+				"unbilled_discount_account",
+				"unbilled_discount_account_name_and_number",
+				"unbilled_revenue",
+				"unbilled_revenue_name_and_number",
+				"uncategorized",
+				"uncategorized_name_and_number",
+				"unrealized_gain_loss",
+				"unrealized_gain_loss_name_and_number",
+				"use_whole_month_accounting_for_prepaids"
+			]
+		}
+	},
+	"/coa/api/cost-allocations": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"account",
+				"basis",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"destination_account",
+				"id",
+				"is_definition_locked",
+				"is_deleted",
+				"is_dynamic",
+				"last_modified_at",
+				"line_count",
+				"lines",
+				"membership_mode",
+				"name",
+				"number"
+			]
+		}
+	},
+	"/coa/api/cost-allocations/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"account",
+				"basis",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"destination_account",
+				"id",
+				"is_definition_locked",
+				"is_deleted",
+				"is_dynamic",
+				"last_modified_at",
+				"line_count",
+				"lines",
+				"membership_mode",
+				"name",
+				"number"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"account",
+				"basis",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"destination_account",
+				"id",
+				"is_definition_locked",
+				"is_deleted",
+				"is_dynamic",
+				"last_modified_at",
+				"line_count",
+				"lines",
+				"membership_mode",
+				"name",
+				"number"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/cost-allocations/{id}/catch-up": {
+		"POST": {
+			"query": [],
+			"body": [
+				"entity",
+				"period"
+			]
+		}
+	},
+	"/coa/api/cost-allocations/{id}/preview": {
+		"GET": {
+			"query": [
+				"amount",
+				"entity",
+				"period"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/cost-allocations/{id}/sync": {
+		"POST": {
+			"query": [],
+			"body": [
+				"entity",
+				"period"
+			]
+		}
+	},
+	"/coa/api/cost-allocations/{id}/sync-runs": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/cost-allocations/{id}/sync-runs/{run_pk}": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/department": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"include_inactive",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset",
+				"q",
+				"sort"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"active",
+				"code",
+				"created_at",
+				"customer",
+				"display_name",
+				"external_id",
+				"id",
+				"last_modified_at",
+				"name",
+				"parent",
+				"parent_name",
+				"source",
+				"tag_group_ids",
+				"tag_ids",
+				"tags"
+			]
+		}
+	},
+	"/coa/api/department/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"active",
+				"code",
+				"created_at",
+				"customer",
+				"display_name",
+				"external_id",
+				"id",
+				"last_modified_at",
+				"name",
+				"parent",
+				"parent_name",
+				"source",
+				"tag_group_ids",
+				"tag_ids",
+				"tags"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"active",
+				"code",
+				"created_at",
+				"customer",
+				"display_name",
+				"external_id",
+				"id",
+				"last_modified_at",
+				"name",
+				"parent",
+				"parent_name",
+				"source",
+				"tag_group_ids",
+				"tag_ids",
+				"tags"
+			]
+		},
+		"DELETE": {
+			"query": [
+				"new_department"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/department/{id}/delete": {
+		"POST": {
+			"query": [
+				"new_department"
+			],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/department/bulk-search": {
+		"POST": {
+			"query": [],
+			"body": [
+				"departments",
+				"upsert"
+			]
+		}
+	},
+	"/coa/api/entity": {
+		"GET": {
+			"query": [
+				"exclude_adjusting",
+				"include_inactive"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"active",
+				"address_1",
+				"address_2",
+				"allow_payments_in_closed_periods",
+				"auto_apply_catchup_for_closed_periods",
+				"business_category",
+				"business_type",
+				"city",
+				"country",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"description",
+				"disable_service_date",
+				"elimination_entity",
+				"email",
+				"enable_mid_month_convention",
+				"fiscal_year_day",
+				"fiscal_year_month",
+				"id",
+				"invoice_address",
+				"invoice_cc_emails",
+				"invoice_display_settings",
+				"invoice_email",
+				"invoice_email_attachments",
+				"invoice_email_body",
+				"invoice_email_subject",
+				"invoice_message",
+				"invoice_name",
+				"invoice_prefix",
+				"is_adjusting",
+				"is_deleted",
+				"is_elimination_entity",
+				"ita_deduction_file_number",
+				"ita_payer_status",
+				"last_modified_at",
+				"lineage_array",
+				"logo_url",
+				"mid_month_threshold",
+				"name",
+				"parent",
+				"parent_name",
+				"phone_number",
+				"primary_entity",
+				"primary_entity_name",
+				"representative_name",
+				"seller_tax_registrations",
+				"state",
+				"tax_identification_number",
+				"use_whole_month_accounting_for_prepaids",
+				"withholding_certificate",
+				"withholding_certificate_number",
+				"withholding_scheme",
+				"withholding_scheme_name",
+				"zip_code"
+			]
+		}
+	},
+	"/coa/api/entity/{entity_id}/attachment": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/entity/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"active",
+				"address_1",
+				"address_2",
+				"allow_payments_in_closed_periods",
+				"auto_apply_catchup_for_closed_periods",
+				"business_category",
+				"business_type",
+				"city",
+				"country",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"description",
+				"disable_service_date",
+				"elimination_entity",
+				"email",
+				"enable_mid_month_convention",
+				"fiscal_year_day",
+				"fiscal_year_month",
+				"id",
+				"invoice_address",
+				"invoice_cc_emails",
+				"invoice_display_settings",
+				"invoice_email",
+				"invoice_email_attachments",
+				"invoice_email_body",
+				"invoice_email_subject",
+				"invoice_message",
+				"invoice_name",
+				"invoice_prefix",
+				"is_adjusting",
+				"is_deleted",
+				"is_elimination_entity",
+				"ita_deduction_file_number",
+				"ita_payer_status",
+				"last_modified_at",
+				"lineage_array",
+				"logo_url",
+				"mid_month_threshold",
+				"name",
+				"parent",
+				"parent_name",
+				"phone_number",
+				"primary_entity",
+				"primary_entity_name",
+				"representative_name",
+				"seller_tax_registrations",
+				"state",
+				"tax_identification_number",
+				"use_whole_month_accounting_for_prepaids",
+				"withholding_certificate",
+				"withholding_certificate_number",
+				"withholding_scheme",
+				"withholding_scheme_name",
+				"zip_code"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"active",
+				"address_1",
+				"address_2",
+				"allow_payments_in_closed_periods",
+				"auto_apply_catchup_for_closed_periods",
+				"business_category",
+				"business_type",
+				"city",
+				"country",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"description",
+				"disable_service_date",
+				"elimination_entity",
+				"email",
+				"enable_mid_month_convention",
+				"fiscal_year_day",
+				"fiscal_year_month",
+				"id",
+				"invoice_address",
+				"invoice_cc_emails",
+				"invoice_display_settings",
+				"invoice_email",
+				"invoice_email_attachments",
+				"invoice_email_body",
+				"invoice_email_subject",
+				"invoice_message",
+				"invoice_name",
+				"invoice_prefix",
+				"is_adjusting",
+				"is_deleted",
+				"is_elimination_entity",
+				"ita_deduction_file_number",
+				"ita_payer_status",
+				"last_modified_at",
+				"lineage_array",
+				"logo_url",
+				"mid_month_threshold",
+				"name",
+				"parent",
+				"parent_name",
+				"phone_number",
+				"primary_entity",
+				"primary_entity_name",
+				"representative_name",
+				"seller_tax_registrations",
+				"state",
+				"tax_identification_number",
+				"use_whole_month_accounting_for_prepaids",
+				"withholding_certificate",
+				"withholding_certificate_number",
+				"withholding_scheme",
+				"withholding_scheme_name",
+				"zip_code"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/entity/{id}/logo": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/entity/for-intercompany": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/fixed-asset": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"accumulated_depreciation_account",
+				"accumulated_depreciation_account_name",
+				"asset_account",
+				"asset_account_name",
+				"asset_class",
+				"asset_class_name",
+				"asset_class_useful_life",
+				"attachments",
+				"chat_id",
+				"chat_uuid",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"depreciated_until",
+				"depreciation_end_date",
+				"depreciation_expense_account",
+				"depreciation_expense_account_name",
+				"depreciation_start_date",
+				"depreciations",
+				"description",
+				"disposals",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"id",
+				"impairment_cap",
+				"impairments",
+				"initial_value",
+				"is_deleted",
+				"is_non_depreciable",
+				"last_modified_at",
+				"last_resume_date",
+				"name",
+				"net_book_value",
+				"pause_date",
+				"pause_reason",
+				"purchase_date",
+				"purchase_journal_entry",
+				"purchase_journal_entry_order",
+				"purchase_transaction",
+				"purchase_transaction_id",
+				"purchase_transactions",
+				"salvage_value",
+				"status",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"transfers",
+				"useful_life",
+				"vendor",
+				"vendor_campfire_id",
+				"vendor_name"
+			]
+		}
+	},
+	"/coa/api/fixed-asset-automation": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset",
+				"ordering",
+				"search"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"account",
+				"account_name",
+				"account_number",
+				"amount_threshold",
+				"asset_class",
+				"asset_class_name",
+				"created_at",
+				"currency",
+				"entity",
+				"entity_name",
+				"forward_looking",
+				"id",
+				"last_modified_at",
+				"name",
+				"needs_review"
+			]
+		}
+	},
+	"/coa/api/fixed-asset-automation-match/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"asset_currency",
+				"created_asset",
+				"created_at",
+				"id",
+				"proposed_asset_class",
+				"proposed_department",
+				"proposed_depreciation_start_date",
+				"proposed_entity",
+				"proposed_initial_value",
+				"proposed_name",
+				"proposed_purchase_date",
+				"proposed_salvage_value",
+				"proposed_vendor",
+				"rule",
+				"rule_account_name",
+				"rule_name",
+				"rule_needs_review",
+				"rule_threshold",
+				"transaction",
+				"transaction_amount",
+				"transaction_date",
+				"transaction_description"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"asset_currency",
+				"created_asset",
+				"created_at",
+				"id",
+				"proposed_asset_class",
+				"proposed_department",
+				"proposed_depreciation_start_date",
+				"proposed_entity",
+				"proposed_initial_value",
+				"proposed_name",
+				"proposed_purchase_date",
+				"proposed_salvage_value",
+				"proposed_vendor",
+				"rule",
+				"rule_account_name",
+				"rule_name",
+				"rule_needs_review",
+				"rule_threshold",
+				"transaction",
+				"transaction_amount",
+				"transaction_date",
+				"transaction_description"
+			]
+		}
+	},
+	"/coa/api/fixed-asset-automation/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"account",
+				"account_name",
+				"account_number",
+				"amount_threshold",
+				"asset_class",
+				"asset_class_name",
+				"created_at",
+				"currency",
+				"entity",
+				"entity_name",
+				"forward_looking",
+				"id",
+				"last_modified_at",
+				"name",
+				"needs_review"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"account",
+				"account_name",
+				"account_number",
+				"amount_threshold",
+				"asset_class",
+				"asset_class_name",
+				"created_at",
+				"currency",
+				"entity",
+				"entity_name",
+				"forward_looking",
+				"id",
+				"last_modified_at",
+				"name",
+				"needs_review"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/fixed-asset-automation/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/fixed-asset-automation/accounts": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/fixed-asset-automation/asset-classes": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/fixed-asset-automation/matches": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset",
+				"ordering"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/fixed-asset-automation/run": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/fixed-asset-class": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"accumulated_depreciation_account",
+				"accumulated_depreciation_account_name",
+				"asset_account",
+				"asset_account_name",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"depreciation_expense_account",
+				"depreciation_expense_account_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"name",
+				"useful_life"
+			]
+		}
+	},
+	"/coa/api/fixed-asset-class/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"accumulated_depreciation_account",
+				"accumulated_depreciation_account_name",
+				"asset_account",
+				"asset_account_name",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"depreciation_expense_account",
+				"depreciation_expense_account_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"name",
+				"useful_life"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"accumulated_depreciation_account",
+				"accumulated_depreciation_account_name",
+				"asset_account",
+				"asset_account_name",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"depreciation_expense_account",
+				"depreciation_expense_account_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"name",
+				"useful_life"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/fixed-asset/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"accumulated_depreciation_account",
+				"accumulated_depreciation_account_name",
+				"asset_account",
+				"asset_account_name",
+				"asset_class",
+				"asset_class_name",
+				"asset_class_useful_life",
+				"attachments",
+				"chat_id",
+				"chat_uuid",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"depreciated_until",
+				"depreciation_end_date",
+				"depreciation_expense_account",
+				"depreciation_expense_account_name",
+				"depreciation_start_date",
+				"depreciations",
+				"description",
+				"disposals",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"id",
+				"impairment_cap",
+				"impairments",
+				"initial_value",
+				"is_deleted",
+				"is_non_depreciable",
+				"last_modified_at",
+				"last_resume_date",
+				"name",
+				"net_book_value",
+				"pause_date",
+				"pause_reason",
+				"purchase_date",
+				"purchase_journal_entry",
+				"purchase_journal_entry_order",
+				"purchase_transaction",
+				"purchase_transaction_id",
+				"purchase_transactions",
+				"salvage_value",
+				"status",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"transfers",
+				"useful_life",
+				"vendor",
+				"vendor_campfire_id",
+				"vendor_name"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"accumulated_depreciation_account",
+				"accumulated_depreciation_account_name",
+				"asset_account",
+				"asset_account_name",
+				"asset_class",
+				"asset_class_name",
+				"asset_class_useful_life",
+				"attachments",
+				"chat_id",
+				"chat_uuid",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"depreciated_until",
+				"depreciation_end_date",
+				"depreciation_expense_account",
+				"depreciation_expense_account_name",
+				"depreciation_start_date",
+				"depreciations",
+				"description",
+				"disposals",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"id",
+				"impairment_cap",
+				"impairments",
+				"initial_value",
+				"is_deleted",
+				"is_non_depreciable",
+				"last_modified_at",
+				"last_resume_date",
+				"name",
+				"net_book_value",
+				"pause_date",
+				"pause_reason",
+				"purchase_date",
+				"purchase_journal_entry",
+				"purchase_journal_entry_order",
+				"purchase_transaction",
+				"purchase_transaction_id",
+				"purchase_transactions",
+				"salvage_value",
+				"status",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"transfers",
+				"useful_life",
+				"vendor",
+				"vendor_campfire_id",
+				"vendor_name"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/fixed-asset/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/fixed-asset/reconciliation/unmatched-gl": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/general-ledger": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/intercompany-journal-entry": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"attachments",
+				"bank_transaction_id",
+				"chat_uuid",
+				"close_task_id",
+				"created_at",
+				"created_automatically",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"date",
+				"deleted_at",
+				"entities",
+				"exchange_rates",
+				"id",
+				"is_deleted",
+				"journal_id",
+				"journals_to_delete",
+				"last_modified_at",
+				"memo",
+				"order",
+				"ref_number",
+				"reversal_date",
+				"reversal_of",
+				"reversal_of_order",
+				"reversals",
+				"source",
+				"source_file",
+				"source_id",
+				"statement_transaction_id",
+				"transactions",
+				"type"
+			]
+		}
+	},
+	"/coa/api/intercompany-journal-entry/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"attachments",
+				"bank_transaction_id",
+				"chat_uuid",
+				"close_task_id",
+				"created_at",
+				"created_automatically",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"date",
+				"deleted_at",
+				"entities",
+				"exchange_rates",
+				"id",
+				"is_deleted",
+				"journal_id",
+				"journals_to_delete",
+				"last_modified_at",
+				"memo",
+				"order",
+				"ref_number",
+				"reversal_date",
+				"reversal_of",
+				"reversal_of_order",
+				"reversals",
+				"source",
+				"source_file",
+				"source_id",
+				"statement_transaction_id",
+				"transactions",
+				"type"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"attachments",
+				"bank_transaction_id",
+				"chat_uuid",
+				"close_task_id",
+				"created_at",
+				"created_automatically",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"date",
+				"deleted_at",
+				"entities",
+				"exchange_rates",
+				"id",
+				"is_deleted",
+				"journal_id",
+				"journals_to_delete",
+				"last_modified_at",
+				"memo",
+				"order",
+				"ref_number",
+				"reversal_date",
+				"reversal_of",
+				"reversal_of_order",
+				"reversals",
+				"source",
+				"source_file",
+				"source_id",
+				"statement_transaction_id",
+				"transactions",
+				"type"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/intercompany-journal-entry/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/intercompany-journal-entry/balance": {
+		"POST": {
+			"query": [],
+			"body": [
+				"date",
+				"exchange_rates",
+				"transactions"
+			]
+		}
+	},
+	"/coa/api/journal_entry": {
+		"GET": {
+			"query": [
+				"account",
+				"all_time",
+				"end_date",
+				"journal_id",
+				"limit",
+				"offset",
+				"sort",
+				"source",
+				"start_date"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"allocation_id",
+				"allocation_name",
+				"allocation_sync_run_id",
+				"attachments",
+				"bulk_upload",
+				"chat",
+				"chat_uuid",
+				"close_task_id",
+				"created_at",
+				"created_automatically",
+				"created_by",
+				"created_by_name",
+				"created_by_source",
+				"credit_memos",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"date",
+				"debit_memos",
+				"deleted_at",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"float_bill_id",
+				"id",
+				"intercompany_journal",
+				"invoice",
+				"is_deleted",
+				"journal_id",
+				"journals_to_delete",
+				"last_draft",
+				"last_modified_at",
+				"linked_source_documents",
+				"memo",
+				"navan_region",
+				"order",
+				"ramp_use_sandbox",
+				"recurrent_journal_entry",
+				"ref_number",
+				"revenue_transactions",
+				"reversal_date",
+				"reversal_of",
+				"reversal_of_order",
+				"reversals",
+				"search_text",
+				"search_vector",
+				"source",
+				"source_file",
+				"source_id",
+				"transactions",
+				"type",
+				"update_reversal",
+				"use_average_rate"
+			]
+		}
+	},
+	"/coa/api/journal_entry/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"allocation_id",
+				"allocation_name",
+				"allocation_sync_run_id",
+				"attachments",
+				"bulk_upload",
+				"chat",
+				"chat_uuid",
+				"close_task_id",
+				"created_at",
+				"created_automatically",
+				"created_by",
+				"created_by_name",
+				"created_by_source",
+				"credit_memos",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"date",
+				"debit_memos",
+				"deleted_at",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"float_bill_id",
+				"id",
+				"intercompany_journal",
+				"invoice",
+				"is_deleted",
+				"journal_id",
+				"journals_to_delete",
+				"last_draft",
+				"last_modified_at",
+				"linked_source_documents",
+				"memo",
+				"navan_region",
+				"order",
+				"ramp_use_sandbox",
+				"recurrent_journal_entry",
+				"ref_number",
+				"revenue_transactions",
+				"reversal_date",
+				"reversal_of",
+				"reversal_of_order",
+				"reversals",
+				"search_text",
+				"search_vector",
+				"source",
+				"source_file",
+				"source_id",
+				"transactions",
+				"type",
+				"update_reversal",
+				"use_average_rate"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"allocation_id",
+				"allocation_name",
+				"allocation_sync_run_id",
+				"attachments",
+				"bulk_upload",
+				"chat",
+				"chat_uuid",
+				"close_task_id",
+				"created_at",
+				"created_automatically",
+				"created_by",
+				"created_by_name",
+				"created_by_source",
+				"credit_memos",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"date",
+				"debit_memos",
+				"deleted_at",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"float_bill_id",
+				"id",
+				"intercompany_journal",
+				"invoice",
+				"is_deleted",
+				"journal_id",
+				"journals_to_delete",
+				"last_draft",
+				"last_modified_at",
+				"linked_source_documents",
+				"memo",
+				"navan_region",
+				"order",
+				"ramp_use_sandbox",
+				"recurrent_journal_entry",
+				"ref_number",
+				"revenue_transactions",
+				"reversal_date",
+				"reversal_of",
+				"reversal_of_order",
+				"reversals",
+				"search_text",
+				"search_vector",
+				"source",
+				"source_file",
+				"source_id",
+				"transactions",
+				"type",
+				"update_reversal",
+				"use_average_rate"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/journal_entry/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/tag": {
+		"GET": {
+			"query": [
+				"exclude_tags",
+				"group",
+				"include_deleted",
+				"include_inactive",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"no_group",
+				"offset",
+				"parent",
+				"q",
+				"sort"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"created_at",
+				"customer",
+				"deleted_at",
+				"group",
+				"group_name",
+				"id",
+				"is_active",
+				"is_deleted",
+				"is_system",
+				"last_modified_at",
+				"name",
+				"parent",
+				"parent_name"
+			]
+		}
+	},
+	"/coa/api/tag-group": {
+		"GET": {
+			"query": [
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset",
+				"q",
+				"sort"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"created_at",
+				"customer",
+				"id",
+				"is_system",
+				"last_modified_at",
+				"name",
+				"slug",
+				"system_type"
+			]
+		}
+	},
+	"/coa/api/tag-group/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"created_at",
+				"customer",
+				"id",
+				"is_system",
+				"last_modified_at",
+				"name",
+				"slug",
+				"system_type"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"created_at",
+				"customer",
+				"id",
+				"is_system",
+				"last_modified_at",
+				"name",
+				"slug",
+				"system_type"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/tag/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"created_at",
+				"customer",
+				"deleted_at",
+				"group",
+				"group_name",
+				"id",
+				"is_active",
+				"is_deleted",
+				"is_system",
+				"last_modified_at",
+				"name",
+				"parent",
+				"parent_name"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"created_at",
+				"customer",
+				"deleted_at",
+				"group",
+				"group_name",
+				"id",
+				"is_active",
+				"is_deleted",
+				"is_system",
+				"last_modified_at",
+				"name",
+				"parent",
+				"parent_name"
+			]
+		},
+		"DELETE": {
+			"query": [
+				"new_tag"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/tag/{id}/delete": {
+		"POST": {
+			"query": [
+				"new_tag"
+			],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/tag/bulk-search": {
+		"POST": {
+			"query": [],
+			"body": [
+				"tags",
+				"upsert"
+			]
+		}
+	},
+	"/coa/api/transaction": {
+		"GET": {
+			"query": [
+				"account",
+				"account_id",
+				"account_rollup",
+				"account_subtype",
+				"account_type",
+				"accounts",
+				"aggregation_fields",
+				"all_time",
+				"bank",
+				"bank_description",
+				"bank_id",
+				"categorized",
+				"counterparty",
+				"counterparty_id",
+				"credit_amount_equal",
+				"credit_amount_gte",
+				"credit_amount_lte",
+				"credit_amount_null",
+				"currency",
+				"date_from",
+				"date_to",
+				"debit_amount_equal",
+				"debit_amount_gte",
+				"debit_amount_lte",
+				"debit_amount_null",
+				"department",
+				"department_id",
+				"department_or_unassigned",
+				"download",
+				"end_date",
+				"entity",
+				"entity_id",
+				"entity_rollup",
+				"exclude_entity",
+				"exclude_entity_id",
+				"exclude_id",
+				"exclude_journal",
+				"exclude_reconciliation_report",
+				"exclude_uncategorized_accounts",
+				"expense_or_ap",
+				"fields",
+				"group",
+				"group_fields",
+				"group_id",
+				"group_keys",
+				"has_linked_fixed_asset",
+				"has_parent_bank_transaction",
+				"include_deleted",
+				"include_matches",
+				"is_not_reconciled",
+				"is_reconciled",
+				"journal",
+				"journal_type",
+				"journal_type__nin",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"match_type",
+				"needs_review",
+				"no_counterparty",
+				"no_department",
+				"no_tag",
+				"no_vendor",
+				"offset",
+				"opposing_account",
+				"opposing_account_subtype",
+				"ordering",
+				"payee",
+				"payee_id",
+				"pivot_fields",
+				"q",
+				"reconciliation_report",
+				"revenue_or_receivables",
+				"shouldPivot",
+				"sort",
+				"start_date",
+				"tag",
+				"tag_groups",
+				"tag_id",
+				"vendor",
+				"vendor_id"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/transaction-gl-codings/propose": {
+		"POST": {
+			"query": [],
+			"body": [
+				"account_confidence",
+				"account_id",
+				"department_id",
+				"transaction_id",
+				"vendor_id"
+			]
+		}
+	},
+	"/coa/api/transaction-match-process": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction-matches": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/transaction-matches-count": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction-matches/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"agent_run_id",
+				"app_label",
+				"applied_payment_id",
+				"applied_payment_kind",
+				"auto_applied",
+				"bank_transaction",
+				"confidence_score",
+				"content_type",
+				"created_at",
+				"customer",
+				"drafts",
+				"id",
+				"matched_object",
+				"model",
+				"object_id",
+				"reason",
+				"reverted_at",
+				"reverted_by",
+				"reviewed_at",
+				"reviewed_by",
+				"snapshot",
+				"status",
+				"threshold_at_apply",
+				"transaction"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"agent_run_id",
+				"app_label",
+				"applied_payment_id",
+				"applied_payment_kind",
+				"auto_applied",
+				"bank_transaction",
+				"confidence_score",
+				"content_type",
+				"created_at",
+				"customer",
+				"drafts",
+				"id",
+				"matched_object",
+				"model",
+				"object_id",
+				"reason",
+				"reverted_at",
+				"reverted_by",
+				"reviewed_at",
+				"reviewed_by",
+				"snapshot",
+				"status",
+				"threshold_at_apply",
+				"transaction"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction-matches/{id}/reject": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction-matches/{id}/status": {
+		"POST": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction-matches/bulk-accept": {
+		"POST": {
+			"query": [],
+			"body": [
+				"excluded_transaction_ids",
+				"expected_count",
+				"filters",
+				"mode",
+				"suggestion_class",
+				"transaction_ids"
+			]
+		}
+	},
+	"/coa/api/transaction-matches/candidates": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction-matches/propose": {
+		"POST": {
+			"query": [],
+			"body": [
+				"items",
+				"matches",
+				"transaction_id"
+			]
+		}
+	},
+	"/coa/api/transaction-merges/propose": {
+		"POST": {
+			"query": [],
+			"body": [
+				"credit_transaction_id",
+				"debit_transaction_id",
+				"score"
+			]
+		}
+	},
+	"/coa/api/transaction/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"account",
+				"account_name",
+				"account_number",
+				"account_subtype",
+				"account_type",
+				"amortization_schedule",
+				"amount",
+				"amount_book",
+				"amount_native",
+				"apply_both_sides",
+				"balance_after_transaction",
+				"balance_before_transaction",
+				"bank_account",
+				"bank_account_name",
+				"bank_description",
+				"bill",
+				"bill_id",
+				"bill_number",
+				"cost_allocation",
+				"cost_allocation_name",
+				"counterparty_entity",
+				"created_at",
+				"created_automatically",
+				"created_fixed_assets",
+				"credit_amount",
+				"credit_amount_book",
+				"credit_amount_native",
+				"currency",
+				"customer",
+				"date_month",
+				"date_year",
+				"debit_amount",
+				"debit_amount_book",
+				"debit_amount_native",
+				"deleted_at",
+				"department",
+				"department_code",
+				"department_name",
+				"draft_matches",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"external_id",
+				"file_names",
+				"files",
+				"has_ai",
+				"has_fixed_asset_rule_matches",
+				"has_matches",
+				"has_merges",
+				"has_rules",
+				"has_suggested_rule",
+				"id",
+				"intercompany_journal",
+				"invoice",
+				"invoice_id",
+				"invoice_number",
+				"is_deleted",
+				"journal",
+				"journal_attachments",
+				"journal_memo",
+				"journal_order",
+				"journal_type",
+				"journal_type_name",
+				"last_lam_prediction_attempt",
+				"last_modified_at",
+				"last_modified_by",
+				"last_modified_by_name",
+				"last_sync_run",
+				"linked_amortizations",
+				"merchant_name",
+				"needs_review",
+				"note",
+				"opposing_account_name",
+				"opposing_account_number",
+				"parent_account_name",
+				"parent_bank_transaction",
+				"parent_department",
+				"parent_department_name",
+				"posted_at",
+				"primary_action_type",
+				"producer",
+				"receipt_url",
+				"reconciliation_report",
+				"source_entity",
+				"source_group",
+				"suggested_account",
+				"suggested_account_name",
+				"suggested_account_number",
+				"suggested_rule_account_name",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"tax_rate",
+				"transaction_id",
+				"transaction_match_id",
+				"vendor",
+				"vendor_campfire_id",
+				"vendor_id",
+				"vendor_name",
+				"warehouse_row_key"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"account",
+				"account_name",
+				"account_number",
+				"account_subtype",
+				"account_type",
+				"amortization_schedule",
+				"amount",
+				"amount_book",
+				"amount_native",
+				"apply_both_sides",
+				"balance_after_transaction",
+				"balance_before_transaction",
+				"bank_account",
+				"bank_account_name",
+				"bank_description",
+				"bill",
+				"bill_id",
+				"bill_number",
+				"cost_allocation",
+				"cost_allocation_name",
+				"counterparty_entity",
+				"created_at",
+				"created_automatically",
+				"created_fixed_assets",
+				"credit_amount",
+				"credit_amount_book",
+				"credit_amount_native",
+				"currency",
+				"customer",
+				"date_month",
+				"date_year",
+				"debit_amount",
+				"debit_amount_book",
+				"debit_amount_native",
+				"deleted_at",
+				"department",
+				"department_code",
+				"department_name",
+				"draft_matches",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"external_id",
+				"file_names",
+				"files",
+				"has_ai",
+				"has_fixed_asset_rule_matches",
+				"has_matches",
+				"has_merges",
+				"has_rules",
+				"has_suggested_rule",
+				"id",
+				"intercompany_journal",
+				"invoice",
+				"invoice_id",
+				"invoice_number",
+				"is_deleted",
+				"journal",
+				"journal_attachments",
+				"journal_memo",
+				"journal_order",
+				"journal_type",
+				"journal_type_name",
+				"last_lam_prediction_attempt",
+				"last_modified_at",
+				"last_modified_by",
+				"last_modified_by_name",
+				"last_sync_run",
+				"linked_amortizations",
+				"merchant_name",
+				"needs_review",
+				"note",
+				"opposing_account_name",
+				"opposing_account_number",
+				"parent_account_name",
+				"parent_bank_transaction",
+				"parent_department",
+				"parent_department_name",
+				"posted_at",
+				"primary_action_type",
+				"producer",
+				"receipt_url",
+				"reconciliation_report",
+				"source_entity",
+				"source_group",
+				"suggested_account",
+				"suggested_account_name",
+				"suggested_account_number",
+				"suggested_rule_account_name",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"tax_rate",
+				"transaction_id",
+				"transaction_match_id",
+				"vendor",
+				"vendor_campfire_id",
+				"vendor_id",
+				"vendor_name",
+				"warehouse_row_key"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction/{id}/allocation": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction/{transaction_id}/bill_payments": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction/{transaction_id}/credit_memo_payments": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction/{transaction_id}/debit_memo_payments": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction/{transaction_id}/invoice_payments": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction/bulk-update": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/transaction/merge": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"transaction_ids",
+				"transaction_match_id"
+			]
+		}
+	},
+	"/coa/api/transaction/totals": {
+		"GET": {
+			"query": [
+				"fields"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill": {
+		"GET": {
+			"query": [
+				"currency",
+				"download",
+				"end_date",
+				"entity",
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset",
+				"q",
+				"sort",
+				"start_date",
+				"status",
+				"vendor"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"amortizations",
+				"amount_due",
+				"amount_paid",
+				"ap_account",
+				"ap_account_name",
+				"attachments",
+				"bill_date",
+				"bill_number",
+				"bill_type",
+				"chat_id",
+				"chat_uuid",
+				"created_at",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"deleted_at",
+				"due_date",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"external_ramp_id",
+				"id",
+				"is_deleted",
+				"ita_allocation_number",
+				"ita_bill_type",
+				"item_date",
+				"journal_entry",
+				"last_modified_at",
+				"lines",
+				"mailing_address",
+				"message_on_bill",
+				"migrated_journal_id",
+				"navan_region",
+				"opening_balance_offset_journal_entry",
+				"origin_fx_rate",
+				"origin_settlement_amount",
+				"origin_settlement_currency",
+				"paid_date",
+				"past_due_days",
+				"payment_journal_entries",
+				"payment_status",
+				"payment_term",
+				"payment_term_name",
+				"payments",
+				"posts_opening_balance_offset",
+				"ramp_use_sandbox",
+				"search_text",
+				"search_vector",
+				"source",
+				"source_bill_data",
+				"source_file",
+				"source_id",
+				"status",
+				"tax_behavior",
+				"tax_rate",
+				"terms",
+				"total_amount",
+				"vendor",
+				"vendor_campfire_id",
+				"vendor_name",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order",
+				"withholding_info",
+				"zip_metadata"
+			]
+		}
+	},
+	"/coa/api/v1/bill-draft": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"entity",
+				"source",
+				"source_file"
+			]
+		}
+	},
+	"/coa/api/v1/bill-draft/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"entity",
+				"extracted_bill_date",
+				"extracted_bill_number",
+				"extracted_currency",
+				"extracted_due_date",
+				"extracted_line_items",
+				"extracted_total_amount",
+				"extracted_vendor_name",
+				"resolved_vendor",
+				"staged_payload"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"entity",
+				"extracted_bill_date",
+				"extracted_bill_number",
+				"extracted_currency",
+				"extracted_due_date",
+				"extracted_line_items",
+				"extracted_total_amount",
+				"extracted_vendor_name",
+				"resolved_vendor",
+				"staged_payload"
+			]
+		}
+	},
+	"/coa/api/v1/bill-draft/{id}/abandon": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill-draft/{id}/discard": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill-draft/{id}/promote": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill-draft/inbox-count": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill-payments": {
+		"GET": {
+			"query": [
+				"cursor",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset",
+				"skip_count",
+				"voided"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill/{bill_id}/empty-transaction-default-department-tags": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill/{bill_id}/pay": {
+		"POST": {
+			"query": [],
+			"body": [
+				"credit_memos",
+				"debit_memos",
+				"empty_transactions",
+				"transaction_match_id",
+				"transactions"
+			]
+		}
+	},
+	"/coa/api/v1/bill/{bill_id}/payment/{payment_id}/void": {
+		"POST": {
+			"query": [],
+			"body": [
+				"void_date"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill/{bill_id}/reopen": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill/{bill_id}/sync-to-ramp": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill/{bill_id}/void": {
+		"POST": {
+			"query": [],
+			"body": [
+				"void_date"
+			]
+		}
+	},
+	"/coa/api/v1/bill/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"amortizations",
+				"amount_due",
+				"amount_paid",
+				"ap_account",
+				"ap_account_name",
+				"attachments",
+				"bill_date",
+				"bill_number",
+				"bill_type",
+				"chat_id",
+				"chat_uuid",
+				"created_at",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"deleted_at",
+				"due_date",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"external_ramp_id",
+				"id",
+				"is_deleted",
+				"ita_allocation_number",
+				"ita_bill_type",
+				"item_date",
+				"journal_entry",
+				"last_modified_at",
+				"lines",
+				"mailing_address",
+				"message_on_bill",
+				"migrated_journal_id",
+				"navan_region",
+				"opening_balance_offset_journal_entry",
+				"origin_fx_rate",
+				"origin_settlement_amount",
+				"origin_settlement_currency",
+				"paid_date",
+				"past_due_days",
+				"payment_journal_entries",
+				"payment_status",
+				"payment_term",
+				"payment_term_name",
+				"payments",
+				"posts_opening_balance_offset",
+				"ramp_use_sandbox",
+				"search_text",
+				"search_vector",
+				"source",
+				"source_bill_data",
+				"source_file",
+				"source_id",
+				"status",
+				"tax_behavior",
+				"tax_rate",
+				"terms",
+				"total_amount",
+				"vendor",
+				"vendor_campfire_id",
+				"vendor_name",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order",
+				"withholding_info",
+				"zip_metadata"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"amortizations",
+				"amount_due",
+				"amount_paid",
+				"ap_account",
+				"ap_account_name",
+				"attachments",
+				"bill_date",
+				"bill_number",
+				"bill_type",
+				"chat_id",
+				"chat_uuid",
+				"created_at",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"deleted_at",
+				"due_date",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"external_ramp_id",
+				"id",
+				"is_deleted",
+				"ita_allocation_number",
+				"ita_bill_type",
+				"item_date",
+				"journal_entry",
+				"last_modified_at",
+				"lines",
+				"mailing_address",
+				"message_on_bill",
+				"migrated_journal_id",
+				"navan_region",
+				"opening_balance_offset_journal_entry",
+				"origin_fx_rate",
+				"origin_settlement_amount",
+				"origin_settlement_currency",
+				"paid_date",
+				"past_due_days",
+				"payment_journal_entries",
+				"payment_status",
+				"payment_term",
+				"payment_term_name",
+				"payments",
+				"posts_opening_balance_offset",
+				"ramp_use_sandbox",
+				"search_text",
+				"search_vector",
+				"source",
+				"source_bill_data",
+				"source_file",
+				"source_id",
+				"status",
+				"tax_behavior",
+				"tax_rate",
+				"terms",
+				"total_amount",
+				"vendor",
+				"vendor_campfire_id",
+				"vendor_name",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order",
+				"withholding_info",
+				"zip_metadata"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/v1/bill/amortization/generate-schedule": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill/bulk-search": {
+		"POST": {
+			"query": [],
+			"body": [
+				"bills"
+			]
+		}
+	},
+	"/coa/api/v1/bill/bulk-sync-to-ramp": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/bill/stats": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/credit-memo": {
+		"GET": {
+			"query": [
+				"client",
+				"contract",
+				"end_date",
+				"entity",
+				"limit",
+				"offset",
+				"q",
+				"sort",
+				"start_date",
+				"status"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"amount_remaining",
+				"amount_used",
+				"anrok_connection",
+				"anrok_transaction_id",
+				"application_status",
+				"applied_date",
+				"attachments",
+				"avalara_connection",
+				"chat_id",
+				"chat_uuid",
+				"client",
+				"client_campfire_id",
+				"client_email",
+				"client_name",
+				"contract",
+				"contract_name",
+				"created_at",
+				"credit_account",
+				"credit_account_name",
+				"credit_account_number",
+				"credit_memo_date",
+				"credit_memo_number",
+				"credit_memo_type",
+				"currency",
+				"customer",
+				"deleted_at",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"exclude_from_tax_connection",
+				"id",
+				"integration_context",
+				"integration_id",
+				"is_deleted",
+				"journal_entry",
+				"last_modified_at",
+				"last_sent_at",
+				"lines",
+				"message_on_credit_memo",
+				"migrated_journal_id",
+				"payments",
+				"ref_number",
+				"revenue_contract",
+				"revenue_contract_name",
+				"revenue_contract_number",
+				"search_text",
+				"search_vector",
+				"sphere_connection",
+				"total_amount",
+				"vat_number",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order"
+			]
+		}
+	},
+	"/coa/api/v1/credit-memo/{credit_memo_id}/mark-used": {
+		"POST": {
+			"query": [],
+			"body": [
+				"account_id",
+				"amount",
+				"memo",
+				"payment_date",
+				"transaction_id"
+			]
+		}
+	},
+	"/coa/api/v1/credit-memo/{credit_memo_id}/payment/{payment_id}/void": {
+		"POST": {
+			"query": [],
+			"body": [
+				"void_date"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/credit-memo/{credit_memo_id}/reopen": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/credit-memo/{credit_memo_id}/void": {
+		"POST": {
+			"query": [],
+			"body": [
+				"void_date"
+			]
+		}
+	},
+	"/coa/api/v1/credit-memo/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"amount_remaining",
+				"amount_used",
+				"anrok_connection",
+				"anrok_transaction_id",
+				"application_status",
+				"applied_date",
+				"attachments",
+				"avalara_connection",
+				"chat_id",
+				"chat_uuid",
+				"client",
+				"client_campfire_id",
+				"client_email",
+				"client_name",
+				"contract",
+				"contract_name",
+				"created_at",
+				"credit_account",
+				"credit_account_name",
+				"credit_account_number",
+				"credit_memo_date",
+				"credit_memo_number",
+				"credit_memo_type",
+				"currency",
+				"customer",
+				"deleted_at",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"exclude_from_tax_connection",
+				"id",
+				"integration_context",
+				"integration_id",
+				"is_deleted",
+				"journal_entry",
+				"last_modified_at",
+				"last_sent_at",
+				"lines",
+				"message_on_credit_memo",
+				"migrated_journal_id",
+				"payments",
+				"ref_number",
+				"revenue_contract",
+				"revenue_contract_name",
+				"revenue_contract_number",
+				"search_text",
+				"search_vector",
+				"sphere_connection",
+				"total_amount",
+				"vat_number",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"amount_remaining",
+				"amount_used",
+				"anrok_connection",
+				"anrok_transaction_id",
+				"application_status",
+				"applied_date",
+				"attachments",
+				"avalara_connection",
+				"chat_id",
+				"chat_uuid",
+				"client",
+				"client_campfire_id",
+				"client_email",
+				"client_name",
+				"contract",
+				"contract_name",
+				"created_at",
+				"credit_account",
+				"credit_account_name",
+				"credit_account_number",
+				"credit_memo_date",
+				"credit_memo_number",
+				"credit_memo_type",
+				"currency",
+				"customer",
+				"deleted_at",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"exclude_from_tax_connection",
+				"id",
+				"integration_context",
+				"integration_id",
+				"is_deleted",
+				"journal_entry",
+				"last_modified_at",
+				"last_sent_at",
+				"lines",
+				"message_on_credit_memo",
+				"migrated_journal_id",
+				"payments",
+				"ref_number",
+				"revenue_contract",
+				"revenue_contract_name",
+				"revenue_contract_number",
+				"search_text",
+				"search_vector",
+				"sphere_connection",
+				"total_amount",
+				"vat_number",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/credit-memo/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/v1/credit-memo/{id}/pdf": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/credit-memo/{id}/send": {
+		"PUT": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/credit-memo/bulk-search": {
+		"POST": {
+			"query": [],
+			"body": [
+				"credit_memos"
+			]
+		}
+	},
+	"/coa/api/v1/credit-memo/next-credit-memo-number": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/debit-memo": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"amortizations",
+				"amount_remaining",
+				"amount_used",
+				"application_status",
+				"applied_date",
+				"attachments",
+				"chat_id",
+				"chat_uuid",
+				"created_at",
+				"currency",
+				"customer",
+				"debit_account",
+				"debit_account_name",
+				"debit_account_number",
+				"debit_memo_date",
+				"debit_memo_number",
+				"deleted_at",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"id",
+				"is_deleted",
+				"journal_entry",
+				"last_modified_at",
+				"lines",
+				"message_on_debit_memo",
+				"migrated_journal_id",
+				"payments",
+				"ref_number",
+				"search_text",
+				"search_vector",
+				"source",
+				"source_id",
+				"tax_behavior",
+				"total_amount",
+				"vendor",
+				"vendor_campfire_id",
+				"vendor_name",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order"
+			]
+		}
+	},
+	"/coa/api/v1/debit-memo/{debit_memo_id}/mark-used": {
+		"POST": {
+			"query": [],
+			"body": [
+				"account_id",
+				"amount",
+				"memo",
+				"payment_date",
+				"transaction_id"
+			]
+		}
+	},
+	"/coa/api/v1/debit-memo/{debit_memo_id}/payment/{payment_id}/void": {
+		"POST": {
+			"query": [],
+			"body": [
+				"void_date"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/debit-memo/{debit_memo_id}/reopen": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/debit-memo/{debit_memo_id}/void": {
+		"POST": {
+			"query": [],
+			"body": [
+				"void_date"
+			]
+		}
+	},
+	"/coa/api/v1/debit-memo/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"amortizations",
+				"amount_remaining",
+				"amount_used",
+				"application_status",
+				"applied_date",
+				"attachments",
+				"chat_id",
+				"chat_uuid",
+				"created_at",
+				"currency",
+				"customer",
+				"debit_account",
+				"debit_account_name",
+				"debit_account_number",
+				"debit_memo_date",
+				"debit_memo_number",
+				"deleted_at",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"id",
+				"is_deleted",
+				"journal_entry",
+				"last_modified_at",
+				"lines",
+				"message_on_debit_memo",
+				"migrated_journal_id",
+				"payments",
+				"ref_number",
+				"search_text",
+				"search_vector",
+				"source",
+				"source_id",
+				"tax_behavior",
+				"total_amount",
+				"vendor",
+				"vendor_campfire_id",
+				"vendor_name",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"amortizations",
+				"amount_remaining",
+				"amount_used",
+				"application_status",
+				"applied_date",
+				"attachments",
+				"chat_id",
+				"chat_uuid",
+				"created_at",
+				"currency",
+				"customer",
+				"debit_account",
+				"debit_account_name",
+				"debit_account_number",
+				"debit_memo_date",
+				"debit_memo_number",
+				"deleted_at",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"id",
+				"is_deleted",
+				"journal_entry",
+				"last_modified_at",
+				"lines",
+				"message_on_debit_memo",
+				"migrated_journal_id",
+				"payments",
+				"ref_number",
+				"search_text",
+				"search_vector",
+				"source",
+				"source_id",
+				"tax_behavior",
+				"total_amount",
+				"vendor",
+				"vendor_campfire_id",
+				"vendor_name",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/debit-memo/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/v1/debit-memo/bulk-search": {
+		"POST": {
+			"query": [],
+			"body": [
+				"debit_memos"
+			]
+		}
+	},
+	"/coa/api/v1/debit-memo/next-debit-memo-number": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/invoice": {
+		"GET": {
+			"query": [
+				"client",
+				"contract",
+				"currency",
+				"download",
+				"end_date",
+				"entity",
+				"invoice_number",
+				"limit",
+				"line_tag_group_id",
+				"line_tag_id",
+				"offset",
+				"paid_date_from",
+				"paid_date_to",
+				"parent_client",
+				"q",
+				"ref_number",
+				"sentStatus",
+				"sort",
+				"start_date",
+				"status"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"amount_due",
+				"amount_paid",
+				"anrok_connection",
+				"anrok_customer_id",
+				"anrok_transaction_id",
+				"ar_account",
+				"attachments",
+				"auto_send_invoice",
+				"auto_send_invoice_at",
+				"auto_sent_at",
+				"avalara_connection",
+				"avalara_connection_company",
+				"avalara_connection_name",
+				"bad_debt_journal_entry",
+				"billing_address",
+				"billing_addressee",
+				"chat_id",
+				"chat_uuid",
+				"client",
+				"client_campfire_id",
+				"client_email",
+				"client_invoice_message",
+				"client_is_reseller",
+				"client_name",
+				"client_use_stripe_auto_bill",
+				"contract",
+				"contract_custom_fields",
+				"contract_deal_id",
+				"contract_name",
+				"counterparty_entity",
+				"created_at",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"discount",
+				"due_date",
+				"emails",
+				"entity",
+				"entity_currency",
+				"entity_invoice_message",
+				"entity_name",
+				"entity_transfer_journal_entry",
+				"exchange_rate",
+				"exchange_rate_book",
+				"exclude_from_tax_connection",
+				"id",
+				"integration_context",
+				"integration_id",
+				"invoice_date",
+				"invoice_labels",
+				"invoice_language",
+				"invoice_number",
+				"is_deleted",
+				"is_migrated",
+				"ita_allocation_number",
+				"item_date",
+				"journal_entry",
+				"journal_entry_intercompany",
+				"last_modified_at",
+				"last_sent_at",
+				"lines",
+				"location_of_sale",
+				"message_on_invoice",
+				"migrated_journal_id",
+				"opening_balance_offset_journal_entry",
+				"overage_amount",
+				"paid_date",
+				"past_due_days",
+				"payment_journal_entries",
+				"payment_status",
+				"payment_term",
+				"payment_term_applied_discount",
+				"payment_term_name",
+				"payments",
+				"period_end",
+				"period_start",
+				"posts_opening_balance_offset",
+				"pre_due_reminder_sent_dates",
+				"public_invoice_payment_url",
+				"purchase_order_number",
+				"ref_number",
+				"related_journal_entries",
+				"reminder_sent_dates",
+				"revenue_contract",
+				"revenue_contract_invoice",
+				"revenue_contract_link",
+				"revenue_contract_name",
+				"revenue_contract_number",
+				"revenue_transactions",
+				"sent_date",
+				"shipping_address",
+				"shipping_address_from_contract",
+				"shipping_addressee",
+				"shipping_date",
+				"source",
+				"source_file",
+				"source_id",
+				"sphere_connection",
+				"status",
+				"stripe_connection",
+				"stripe_connection_billing_portal_enabled",
+				"stripe_connection_entity",
+				"stripe_connection_name",
+				"stripe_invoice_id",
+				"stripe_payment_intent_id",
+				"stripe_payment_link",
+				"stripe_payment_link_id",
+				"stripe_pdf_url",
+				"tags",
+				"tax_exempt",
+				"tax_rate",
+				"tax_rate_name",
+				"tax_rate_value",
+				"terms",
+				"total_amount",
+				"uncollectible_date",
+				"use_stripe_auto_bill",
+				"vat_number",
+				"vat_number_from_contract",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order",
+				"warning_message",
+				"withholding_info"
+			]
+		}
+	},
+	"/coa/api/v1/invoice-payments": {
+		"GET": {
+			"query": [
+				"cursor",
+				"external_id",
+				"invoice_id",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset",
+				"skip_count",
+				"voided"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/v1/invoice/{invoice_id}/calculate-payment": {
+		"POST": {
+			"query": [],
+			"body": [
+				"credit_memos",
+				"empty_transactions",
+				"transactions"
+			]
+		}
+	},
+	"/coa/api/v1/invoice/{invoice_id}/default-payment": {
+		"POST": {
+			"query": [],
+			"body": [
+				"posted_at",
+				"transaction_amount"
+			]
+		}
+	},
+	"/coa/api/v1/invoice/{invoice_id}/pay": {
+		"POST": {
+			"query": [],
+			"body": [
+				"credit_memos",
+				"debit_memos",
+				"empty_transactions",
+				"transaction_match_id",
+				"transactions"
+			]
+		}
+	},
+	"/coa/api/v1/invoice/{invoice_id}/payment/{payment_id}/void": {
+		"POST": {
+			"query": [],
+			"body": [
+				"void_date"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/invoice/{invoice_id}/reopen": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/invoice/{invoice_id}/void": {
+		"POST": {
+			"query": [],
+			"body": [
+				"void_date"
+			]
+		}
+	},
+	"/coa/api/v1/invoice/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"amount_due",
+				"amount_paid",
+				"anrok_connection",
+				"anrok_customer_id",
+				"anrok_transaction_id",
+				"ar_account",
+				"attachments",
+				"auto_send_invoice",
+				"auto_send_invoice_at",
+				"auto_sent_at",
+				"avalara_connection",
+				"avalara_connection_company",
+				"avalara_connection_name",
+				"bad_debt_journal_entry",
+				"billing_address",
+				"billing_addressee",
+				"chat_id",
+				"chat_uuid",
+				"client",
+				"client_campfire_id",
+				"client_email",
+				"client_invoice_message",
+				"client_is_reseller",
+				"client_name",
+				"client_use_stripe_auto_bill",
+				"contract",
+				"contract_custom_fields",
+				"contract_deal_id",
+				"contract_name",
+				"counterparty_entity",
+				"created_at",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"discount",
+				"due_date",
+				"emails",
+				"entity",
+				"entity_currency",
+				"entity_invoice_message",
+				"entity_name",
+				"entity_transfer_journal_entry",
+				"exchange_rate",
+				"exchange_rate_book",
+				"exclude_from_tax_connection",
+				"id",
+				"integration_context",
+				"integration_id",
+				"invoice_date",
+				"invoice_labels",
+				"invoice_language",
+				"invoice_number",
+				"is_deleted",
+				"is_migrated",
+				"ita_allocation_number",
+				"item_date",
+				"journal_entry",
+				"journal_entry_intercompany",
+				"last_modified_at",
+				"last_sent_at",
+				"lines",
+				"location_of_sale",
+				"message_on_invoice",
+				"migrated_journal_id",
+				"opening_balance_offset_journal_entry",
+				"overage_amount",
+				"paid_date",
+				"past_due_days",
+				"payment_journal_entries",
+				"payment_status",
+				"payment_term",
+				"payment_term_applied_discount",
+				"payment_term_name",
+				"payments",
+				"period_end",
+				"period_start",
+				"posts_opening_balance_offset",
+				"pre_due_reminder_sent_dates",
+				"public_invoice_payment_url",
+				"purchase_order_number",
+				"ref_number",
+				"related_journal_entries",
+				"reminder_sent_dates",
+				"revenue_contract",
+				"revenue_contract_invoice",
+				"revenue_contract_link",
+				"revenue_contract_name",
+				"revenue_contract_number",
+				"revenue_transactions",
+				"sent_date",
+				"shipping_address",
+				"shipping_address_from_contract",
+				"shipping_addressee",
+				"shipping_date",
+				"source",
+				"source_file",
+				"source_id",
+				"sphere_connection",
+				"status",
+				"stripe_connection",
+				"stripe_connection_billing_portal_enabled",
+				"stripe_connection_entity",
+				"stripe_connection_name",
+				"stripe_invoice_id",
+				"stripe_payment_intent_id",
+				"stripe_payment_link",
+				"stripe_payment_link_id",
+				"stripe_pdf_url",
+				"tags",
+				"tax_exempt",
+				"tax_rate",
+				"tax_rate_name",
+				"tax_rate_value",
+				"terms",
+				"total_amount",
+				"uncollectible_date",
+				"use_stripe_auto_bill",
+				"vat_number",
+				"vat_number_from_contract",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order",
+				"warning_message",
+				"withholding_info"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"amount_due",
+				"amount_paid",
+				"anrok_connection",
+				"anrok_customer_id",
+				"anrok_transaction_id",
+				"ar_account",
+				"attachments",
+				"auto_send_invoice",
+				"auto_send_invoice_at",
+				"auto_sent_at",
+				"avalara_connection",
+				"avalara_connection_company",
+				"avalara_connection_name",
+				"bad_debt_journal_entry",
+				"billing_address",
+				"billing_addressee",
+				"chat_id",
+				"chat_uuid",
+				"client",
+				"client_campfire_id",
+				"client_email",
+				"client_invoice_message",
+				"client_is_reseller",
+				"client_name",
+				"client_use_stripe_auto_bill",
+				"contract",
+				"contract_custom_fields",
+				"contract_deal_id",
+				"contract_name",
+				"counterparty_entity",
+				"created_at",
+				"csv_upload_row_number",
+				"csv_upload_run_id",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"discount",
+				"due_date",
+				"emails",
+				"entity",
+				"entity_currency",
+				"entity_invoice_message",
+				"entity_name",
+				"entity_transfer_journal_entry",
+				"exchange_rate",
+				"exchange_rate_book",
+				"exclude_from_tax_connection",
+				"id",
+				"integration_context",
+				"integration_id",
+				"invoice_date",
+				"invoice_labels",
+				"invoice_language",
+				"invoice_number",
+				"is_deleted",
+				"is_migrated",
+				"ita_allocation_number",
+				"item_date",
+				"journal_entry",
+				"journal_entry_intercompany",
+				"last_modified_at",
+				"last_sent_at",
+				"lines",
+				"location_of_sale",
+				"message_on_invoice",
+				"migrated_journal_id",
+				"opening_balance_offset_journal_entry",
+				"overage_amount",
+				"paid_date",
+				"past_due_days",
+				"payment_journal_entries",
+				"payment_status",
+				"payment_term",
+				"payment_term_applied_discount",
+				"payment_term_name",
+				"payments",
+				"period_end",
+				"period_start",
+				"posts_opening_balance_offset",
+				"pre_due_reminder_sent_dates",
+				"public_invoice_payment_url",
+				"purchase_order_number",
+				"ref_number",
+				"related_journal_entries",
+				"reminder_sent_dates",
+				"revenue_contract",
+				"revenue_contract_invoice",
+				"revenue_contract_link",
+				"revenue_contract_name",
+				"revenue_contract_number",
+				"revenue_transactions",
+				"sent_date",
+				"shipping_address",
+				"shipping_address_from_contract",
+				"shipping_addressee",
+				"shipping_date",
+				"source",
+				"source_file",
+				"source_id",
+				"sphere_connection",
+				"status",
+				"stripe_connection",
+				"stripe_connection_billing_portal_enabled",
+				"stripe_connection_entity",
+				"stripe_connection_name",
+				"stripe_invoice_id",
+				"stripe_payment_intent_id",
+				"stripe_payment_link",
+				"stripe_payment_link_id",
+				"stripe_pdf_url",
+				"tags",
+				"tax_exempt",
+				"tax_rate",
+				"tax_rate_name",
+				"tax_rate_value",
+				"terms",
+				"total_amount",
+				"uncollectible_date",
+				"use_stripe_auto_bill",
+				"vat_number",
+				"vat_number_from_contract",
+				"voided_date",
+				"voided_journal_entry",
+				"voided_journal_entry_order",
+				"warning_message",
+				"withholding_info"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/invoice/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/v1/invoice/bulk-apply-payment": {
+		"POST": {
+			"query": [],
+			"body": [
+				"filters",
+				"invoice_ids",
+				"transaction_id"
+			]
+		}
+	},
+	"/coa/api/v1/invoice/bulk-create": {
+		"POST": {
+			"query": [],
+			"body": [
+				"invoices"
+			]
+		}
+	},
+	"/coa/api/v1/invoice/bulk-search": {
+		"POST": {
+			"query": [],
+			"body": [
+				"invoices"
+			]
+		}
+	},
+	"/coa/api/v1/invoice/report/{id}/data": {
+		"GET": {
+			"query": [
+				"aggregation_fields",
+				"client_id",
+				"contract_id",
+				"currency",
+				"department_id",
+				"end_date",
+				"entity_id",
+				"group_fields",
+				"group_keys",
+				"include_totals",
+				"limit",
+				"mode",
+				"offset",
+				"payment_status",
+				"pivot_fields",
+				"product_id",
+				"shouldPivot",
+				"start_date"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/v1/invoice/report/preview": {
+		"GET": {
+			"query": [
+				"aggregation_fields",
+				"client_id",
+				"contract_id",
+				"currency",
+				"department_id",
+				"end_date",
+				"entity_id",
+				"group_fields",
+				"group_keys",
+				"include_totals",
+				"limit",
+				"mode",
+				"offset",
+				"payment_status",
+				"pivot_fields",
+				"product_id",
+				"shouldPivot",
+				"start_date"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/v1/invoice/statement/client/{client_id}/pdf": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v1/invoice/stats": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v2/reconciliation": {
+		"GET": {
+			"query": [
+				"account",
+				"end_date",
+				"entity",
+				"limit",
+				"offset",
+				"q",
+				"sort",
+				"start_date"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"account",
+				"account_name",
+				"account_number",
+				"account_subtype",
+				"account_type",
+				"adjustments",
+				"approved_by",
+				"approved_by_email",
+				"approved_by_name",
+				"approved_on",
+				"async_task",
+				"attachments",
+				"cleared_activity",
+				"cleared_item_count",
+				"cleared_total_credits",
+				"cleared_total_debits",
+				"created_at",
+				"csv_statements",
+				"currency",
+				"customer",
+				"ending_balance",
+				"entity",
+				"entity_name",
+				"id",
+				"last_modified_at",
+				"matched_activity",
+				"matched_item_count",
+				"matched_total_credits",
+				"matched_total_debits",
+				"matching_task",
+				"open_activity",
+				"open_difference",
+				"open_gl_item_count",
+				"open_statement_activity",
+				"open_statement_line_count",
+				"open_total_credits",
+				"open_total_debits",
+				"reconciled_by",
+				"reconciled_by_email",
+				"reconciled_by_name",
+				"reconciled_on",
+				"reconciliation_difference",
+				"starting_balance",
+				"statement_activity",
+				"statement_ending_date",
+				"statement_recognition_cost_usd",
+				"statement_recognition_input_tokens",
+				"statement_recognition_model_name",
+				"statement_recognition_output_tokens",
+				"statement_recognition_token_total",
+				"statement_starting_date",
+				"status",
+				"total_credit_amount",
+				"total_debit_amount",
+				"unmatched_statement_transactions",
+				"unreconciled_activity",
+				"unreconciled_gl_item_count",
+				"unreconciled_statement_activity",
+				"unreconciled_statement_line_count",
+				"unreconciled_total_credits",
+				"unreconciled_total_debits"
+			]
+		}
+	},
+	"/coa/api/v2/reconciliation/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"account",
+				"account_name",
+				"account_number",
+				"account_subtype",
+				"account_type",
+				"adjustments",
+				"approved_by",
+				"approved_by_email",
+				"approved_by_name",
+				"approved_on",
+				"async_task",
+				"attachments",
+				"cleared_activity",
+				"cleared_item_count",
+				"cleared_total_credits",
+				"cleared_total_debits",
+				"created_at",
+				"csv_statements",
+				"currency",
+				"customer",
+				"ending_balance",
+				"entity",
+				"entity_name",
+				"id",
+				"last_modified_at",
+				"matched_activity",
+				"matched_item_count",
+				"matched_total_credits",
+				"matched_total_debits",
+				"matching_task",
+				"open_activity",
+				"open_difference",
+				"open_gl_item_count",
+				"open_statement_activity",
+				"open_statement_line_count",
+				"open_total_credits",
+				"open_total_debits",
+				"reconciled_by",
+				"reconciled_by_email",
+				"reconciled_by_name",
+				"reconciled_on",
+				"reconciliation_difference",
+				"starting_balance",
+				"statement_activity",
+				"statement_ending_date",
+				"statement_recognition_cost_usd",
+				"statement_recognition_input_tokens",
+				"statement_recognition_model_name",
+				"statement_recognition_output_tokens",
+				"statement_recognition_token_total",
+				"statement_starting_date",
+				"status",
+				"total_credit_amount",
+				"total_debit_amount",
+				"unmatched_statement_transactions",
+				"unreconciled_activity",
+				"unreconciled_gl_item_count",
+				"unreconciled_statement_activity",
+				"unreconciled_statement_line_count",
+				"unreconciled_total_credits",
+				"unreconciled_total_debits"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"account",
+				"account_name",
+				"account_number",
+				"account_subtype",
+				"account_type",
+				"adjustments",
+				"approved_by",
+				"approved_by_email",
+				"approved_by_name",
+				"approved_on",
+				"async_task",
+				"attachments",
+				"cleared_activity",
+				"cleared_item_count",
+				"cleared_total_credits",
+				"cleared_total_debits",
+				"created_at",
+				"csv_statements",
+				"currency",
+				"customer",
+				"ending_balance",
+				"entity",
+				"entity_name",
+				"id",
+				"last_modified_at",
+				"matched_activity",
+				"matched_item_count",
+				"matched_total_credits",
+				"matched_total_debits",
+				"matching_task",
+				"open_activity",
+				"open_difference",
+				"open_gl_item_count",
+				"open_statement_activity",
+				"open_statement_line_count",
+				"open_total_credits",
+				"open_total_debits",
+				"reconciled_by",
+				"reconciled_by_email",
+				"reconciled_by_name",
+				"reconciled_on",
+				"reconciliation_difference",
+				"starting_balance",
+				"statement_activity",
+				"statement_ending_date",
+				"statement_recognition_cost_usd",
+				"statement_recognition_input_tokens",
+				"statement_recognition_model_name",
+				"statement_recognition_output_tokens",
+				"statement_recognition_token_total",
+				"statement_starting_date",
+				"status",
+				"total_credit_amount",
+				"total_debit_amount",
+				"unmatched_statement_transactions",
+				"unreconciled_activity",
+				"unreconciled_gl_item_count",
+				"unreconciled_statement_activity",
+				"unreconciled_statement_line_count",
+				"unreconciled_total_credits",
+				"unreconciled_total_debits"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/v2/reconciliation/{id}/bulk-match-transactions": {
+		"POST": {
+			"query": [],
+			"body": [
+				"pairs"
+			]
+		}
+	},
+	"/coa/api/v2/reconciliation/{id}/source-transactions": {
+		"GET": {
+			"query": [
+				"bank",
+				"currency",
+				"department",
+				"end_date",
+				"group",
+				"limit",
+				"matched",
+				"offset",
+				"q",
+				"reconciled_only",
+				"sort",
+				"start_date",
+				"tag",
+				"unreconciled",
+				"vendor"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/v2/reconciliation/{id}/transactions/confirm": {
+		"POST": {
+			"query": [],
+			"body": [
+				"selected",
+				"selected_statements"
+			]
+		}
+	},
+	"/coa/api/v2/reconciliation/parse-statement-page": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/vendor": {
+		"GET": {
+			"query": [
+				"external_id",
+				"include_deleted",
+				"include_inactive",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset",
+				"q",
+				"sort",
+				"stripe_customer_id",
+				"vendor_type"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"abbreviation",
+				"address_street_1",
+				"address_street_2",
+				"anrok_customer_id",
+				"avalara_customer_id",
+				"bill_vendor_id",
+				"billing_address_street_1",
+				"billing_address_street_2",
+				"billing_addressee",
+				"billing_city",
+				"billing_country",
+				"billing_state",
+				"billing_zip_code",
+				"business_category",
+				"business_id_ssn",
+				"business_type",
+				"campfire_id",
+				"city",
+				"company_name",
+				"contacts",
+				"country",
+				"created_at",
+				"customer",
+				"dba",
+				"default_expense_category",
+				"deleted_at",
+				"display_name",
+				"email",
+				"entity_use_code",
+				"external_id",
+				"first_name",
+				"id",
+				"invoice_labels",
+				"invoice_language",
+				"invoice_message",
+				"is_1099",
+				"is_deleted",
+				"is_reseller",
+				"ita_deduction_type_code",
+				"ita_vendor_entity_code",
+				"ita_vendor_entity_type",
+				"last_modified_at",
+				"last_name",
+				"lineage_array",
+				"mobile_number",
+				"name",
+				"netsuite_customer_id",
+				"notes",
+				"parent",
+				"parent_name",
+				"payment_term",
+				"payment_term_name_display",
+				"phone_number",
+				"search_text",
+				"search_vector",
+				"shipping_addressee",
+				"source",
+				"state",
+				"status",
+				"stripe_connection",
+				"stripe_connection_entity",
+				"stripe_connection_invoicing_enabled",
+				"stripe_connection_name",
+				"stripe_connection_portal_enabled",
+				"stripe_connection_portal_url",
+				"stripe_customer_id",
+				"terms",
+				"use_stripe_auto_bill",
+				"vat_number",
+				"vendor_custom_field_1",
+				"vendor_custom_field_1_name",
+				"vendor_type",
+				"website",
+				"withholding_tax_id",
+				"zip_code"
+			]
+		}
+	},
+	"/coa/api/vendor-contact-title": {
+		"GET": {
+			"query": [
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset",
+				"q",
+				"sort"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"contacts_count",
+				"created_at",
+				"customer",
+				"id",
+				"last_modified_at",
+				"name"
+			]
+		}
+	},
+	"/coa/api/vendor-contact-title/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"contacts_count",
+				"created_at",
+				"customer",
+				"id",
+				"last_modified_at",
+				"name"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"contacts_count",
+				"created_at",
+				"customer",
+				"id",
+				"last_modified_at",
+				"name"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/vendor-contact/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"deleted_at",
+				"email",
+				"first_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"last_name",
+				"mobile_number",
+				"name",
+				"phone_number",
+				"title",
+				"title_name"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"deleted_at",
+				"email",
+				"first_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"last_name",
+				"mobile_number",
+				"name",
+				"phone_number",
+				"title",
+				"title_name"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/coa/api/vendor/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"abbreviation",
+				"address_street_1",
+				"address_street_2",
+				"anrok_customer_id",
+				"avalara_customer_id",
+				"bill_vendor_id",
+				"billing_address_street_1",
+				"billing_address_street_2",
+				"billing_addressee",
+				"billing_city",
+				"billing_country",
+				"billing_state",
+				"billing_zip_code",
+				"business_category",
+				"business_id_ssn",
+				"business_type",
+				"campfire_id",
+				"city",
+				"company_name",
+				"contacts",
+				"country",
+				"created_at",
+				"customer",
+				"dba",
+				"default_expense_category",
+				"deleted_at",
+				"display_name",
+				"email",
+				"entity_use_code",
+				"external_id",
+				"first_name",
+				"id",
+				"invoice_labels",
+				"invoice_language",
+				"invoice_message",
+				"is_1099",
+				"is_deleted",
+				"is_reseller",
+				"ita_deduction_type_code",
+				"ita_vendor_entity_code",
+				"ita_vendor_entity_type",
+				"last_modified_at",
+				"last_name",
+				"lineage_array",
+				"mobile_number",
+				"name",
+				"netsuite_customer_id",
+				"notes",
+				"parent",
+				"parent_name",
+				"payment_term",
+				"payment_term_name_display",
+				"phone_number",
+				"search_text",
+				"search_vector",
+				"shipping_addressee",
+				"source",
+				"state",
+				"status",
+				"stripe_connection",
+				"stripe_connection_entity",
+				"stripe_connection_invoicing_enabled",
+				"stripe_connection_name",
+				"stripe_connection_portal_enabled",
+				"stripe_connection_portal_url",
+				"stripe_customer_id",
+				"terms",
+				"use_stripe_auto_bill",
+				"vat_number",
+				"vendor_custom_field_1",
+				"vendor_custom_field_1_name",
+				"vendor_type",
+				"website",
+				"withholding_tax_id",
+				"zip_code"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"abbreviation",
+				"address_street_1",
+				"address_street_2",
+				"anrok_customer_id",
+				"avalara_customer_id",
+				"bill_vendor_id",
+				"billing_address_street_1",
+				"billing_address_street_2",
+				"billing_addressee",
+				"billing_city",
+				"billing_country",
+				"billing_state",
+				"billing_zip_code",
+				"business_category",
+				"business_id_ssn",
+				"business_type",
+				"campfire_id",
+				"city",
+				"company_name",
+				"contacts",
+				"country",
+				"created_at",
+				"customer",
+				"dba",
+				"default_expense_category",
+				"deleted_at",
+				"display_name",
+				"email",
+				"entity_use_code",
+				"external_id",
+				"first_name",
+				"id",
+				"invoice_labels",
+				"invoice_language",
+				"invoice_message",
+				"is_1099",
+				"is_deleted",
+				"is_reseller",
+				"ita_deduction_type_code",
+				"ita_vendor_entity_code",
+				"ita_vendor_entity_type",
+				"last_modified_at",
+				"last_name",
+				"lineage_array",
+				"mobile_number",
+				"name",
+				"netsuite_customer_id",
+				"notes",
+				"parent",
+				"parent_name",
+				"payment_term",
+				"payment_term_name_display",
+				"phone_number",
+				"search_text",
+				"search_vector",
+				"shipping_addressee",
+				"source",
+				"state",
+				"status",
+				"stripe_connection",
+				"stripe_connection_entity",
+				"stripe_connection_invoicing_enabled",
+				"stripe_connection_name",
+				"stripe_connection_portal_enabled",
+				"stripe_connection_portal_url",
+				"stripe_customer_id",
+				"terms",
+				"use_stripe_auto_bill",
+				"vat_number",
+				"vendor_custom_field_1",
+				"vendor_custom_field_1_name",
+				"vendor_type",
+				"website",
+				"withholding_tax_id",
+				"zip_code"
+			]
+		},
+		"DELETE": {
+			"query": [
+				"new_vendor"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/vendor/{id}/contacts": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"deleted_at",
+				"email",
+				"first_name",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"last_name",
+				"mobile_number",
+				"name",
+				"phone_number",
+				"title",
+				"title_name"
+			]
+		}
+	},
+	"/coa/api/vendor/{id}/delete": {
+		"POST": {
+			"query": [
+				"new_vendor"
+			],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/coa/api/vendor/bulk-search": {
+		"POST": {
+			"query": [],
+			"body": [
+				"upsert",
+				"vendors"
+			]
+		}
+	},
+	"/coa/api/vendor/summary": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		}
+	},
+	"/coa/api/vendor_custom_field_1": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"created_at",
+				"customer",
+				"id",
+				"last_modified_at",
+				"value"
+			]
+		}
+	},
+	"/coa/api/vendor_custom_field_1/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"created_at",
+				"customer",
+				"id",
+				"last_modified_at",
+				"value"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"created_at",
+				"customer",
+				"id",
+				"last_modified_at",
+				"value"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/integrations/api/v1/webhook": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"active",
+				"app",
+				"created_at",
+				"customer",
+				"id",
+				"last_modified_at",
+				"token",
+				"topics",
+				"url",
+				"uuid"
+			]
+		}
+	},
+	"/integrations/api/v1/webhook/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"active",
+				"app",
+				"created_at",
+				"customer",
+				"id",
+				"last_modified_at",
+				"token",
+				"topics",
+				"url",
+				"uuid"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"active",
+				"app",
+				"created_at",
+				"customer",
+				"id",
+				"last_modified_at",
+				"token",
+				"topics",
+				"url",
+				"uuid"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/integrations/api/v1/webhook/{id}/events": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"attachments",
+				"auto_apply_customer_stripe_config_to_invoices",
+				"auto_renew",
+				"auto_renew_duration",
+				"auto_renew_invoice",
+				"auto_send_invoices",
+				"billing_address",
+				"billing_addressee",
+				"billing_frequency",
+				"client",
+				"client_campfire_id",
+				"client_name",
+				"client_terms",
+				"closed_date",
+				"consultant",
+				"contract_end_date",
+				"contract_link",
+				"contract_start_date",
+				"created_at",
+				"crm_link",
+				"currency",
+				"customer",
+				"deal_id",
+				"deal_name",
+				"default_payment_term",
+				"default_payment_term_name",
+				"deleted_at",
+				"department",
+				"department_name",
+				"effective_end_date",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"evergreen_date_boundary_mode",
+				"evergreen_locked_date",
+				"exchange_rate",
+				"exchange_rate_book",
+				"exclude_from_tax_connection",
+				"has_credit_memos",
+				"has_invoices",
+				"has_journal_entries",
+				"id",
+				"invoice_cc_emails",
+				"invoice_email",
+				"is_deleted",
+				"is_evergreen",
+				"journal_entries",
+				"last_modified_at",
+				"minimum_monthly_commitment_amount",
+				"minimum_monthly_commitment_quantity",
+				"monthly_billing_alignment_locked",
+				"monthly_billing_period_alignment",
+				"parent_department",
+				"parent_department_name",
+				"prepaid_commits",
+				"purchase_order_number",
+				"search_text",
+				"search_vector",
+				"shipping_address",
+				"shipping_addressee",
+				"skip_evergreen_invoice_generation",
+				"source",
+				"source_deal_data",
+				"status",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"tax_exempt",
+				"termination_date",
+				"total_contract_value",
+				"total_deferred_revenue",
+				"total_mrr",
+				"total_revenue",
+				"usage_tiers",
+				"vat_number",
+				"working_end_date"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/bundles": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"bundle_description",
+				"bundle_name",
+				"catchup_date",
+				"contract",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"end_date",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"lines",
+				"proration_method",
+				"rebalance_journal_entries_indefinitely",
+				"start_date",
+				"use_catchup",
+				"use_daily_accounting"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/bundles/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"bundle_description",
+				"bundle_name",
+				"catchup_date",
+				"contract",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"end_date",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"lines",
+				"proration_method",
+				"rebalance_journal_entries_indefinitely",
+				"start_date",
+				"use_catchup",
+				"use_daily_accounting"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"bundle_description",
+				"bundle_name",
+				"catchup_date",
+				"contract",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"end_date",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"lines",
+				"proration_method",
+				"rebalance_journal_entries_indefinitely",
+				"start_date",
+				"use_catchup",
+				"use_daily_accounting"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/milestones": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"amount",
+				"billing_cadence",
+				"billing_payment_term",
+				"billing_timing",
+				"contract",
+				"contract_product_bundle",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"description",
+				"first_invoice_date",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"milestone_date",
+				"milestone_name",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_name",
+				"quantity",
+				"rate",
+				"revenue_transaction_id",
+				"tags"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/milestones/{milestone_id}/allocations": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"lines"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"lines"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/milestones/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"amount",
+				"billing_cadence",
+				"billing_payment_term",
+				"billing_timing",
+				"contract",
+				"contract_product_bundle",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"description",
+				"first_invoice_date",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"milestone_date",
+				"milestone_name",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_name",
+				"quantity",
+				"rate",
+				"revenue_transaction_id",
+				"tags"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"amount",
+				"billing_cadence",
+				"billing_payment_term",
+				"billing_timing",
+				"contract",
+				"contract_product_bundle",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"description",
+				"first_invoice_date",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"milestone_date",
+				"milestone_name",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_name",
+				"quantity",
+				"rate",
+				"revenue_transaction_id",
+				"tags"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/milestones/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/prepaid-commit-summary": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/prepaid-commits": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"auto_send_overage_invoices",
+				"billing_cadence",
+				"billing_payment_term",
+				"billing_timing",
+				"contract",
+				"contract_usage_term",
+				"created_at",
+				"currency",
+				"department",
+				"department_name",
+				"description",
+				"discount_percentage",
+				"drawdown_basis",
+				"eligibility_lock_reason",
+				"eligibility_locked",
+				"eligible_usage_product_details",
+				"eligible_usage_products",
+				"entity",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"expiration_date",
+				"first_invoice_date",
+				"id",
+				"invoice",
+				"invoice_basis",
+				"is_invoiced",
+				"last_modified_at",
+				"name",
+				"overage_invoice_cadence",
+				"overage_invoice_start_month",
+				"priority",
+				"product",
+				"product_name",
+				"quantity",
+				"rate",
+				"remaining_value",
+				"start_date",
+				"status",
+				"subledger",
+				"tags",
+				"total_value",
+				"unit",
+				"usage_pricing",
+				"usage_pricing_terms"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/prepaid-commits/{commit_id}/consumption": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"description",
+				"gross_usage_amount",
+				"period_month",
+				"total_events"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/prepaid-commits/{commit_id}/consumption/{id}": {
+		"PUT": {
+			"query": [],
+			"body": []
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/prepaid-commits/{commit_id}/process-adjustments": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/prepaid-commits/{commit_id}/usage-events": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/prepaid-commits/{commit_id}/usage-events/distinct-values": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/prepaid-commits/{commit_id}/usage-events/template": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/prepaid-commits/{commit_id}/usage-events/upload": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/prepaid-commits/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"auto_send_overage_invoices",
+				"billing_cadence",
+				"billing_payment_term",
+				"billing_timing",
+				"contract",
+				"contract_usage_term",
+				"created_at",
+				"currency",
+				"department",
+				"department_name",
+				"description",
+				"discount_percentage",
+				"drawdown_basis",
+				"eligibility_lock_reason",
+				"eligibility_locked",
+				"eligible_usage_product_details",
+				"eligible_usage_products",
+				"entity",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"expiration_date",
+				"first_invoice_date",
+				"id",
+				"invoice",
+				"invoice_basis",
+				"is_invoiced",
+				"last_modified_at",
+				"name",
+				"overage_invoice_cadence",
+				"overage_invoice_start_month",
+				"priority",
+				"product",
+				"product_name",
+				"quantity",
+				"rate",
+				"remaining_value",
+				"start_date",
+				"status",
+				"subledger",
+				"tags",
+				"total_value",
+				"unit",
+				"usage_pricing",
+				"usage_pricing_terms"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"auto_send_overage_invoices",
+				"billing_cadence",
+				"billing_payment_term",
+				"billing_timing",
+				"contract",
+				"contract_usage_term",
+				"created_at",
+				"currency",
+				"department",
+				"department_name",
+				"description",
+				"discount_percentage",
+				"drawdown_basis",
+				"eligibility_lock_reason",
+				"eligibility_locked",
+				"eligible_usage_product_details",
+				"eligible_usage_products",
+				"entity",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"expiration_date",
+				"first_invoice_date",
+				"id",
+				"invoice",
+				"invoice_basis",
+				"is_invoiced",
+				"last_modified_at",
+				"name",
+				"overage_invoice_cadence",
+				"overage_invoice_start_month",
+				"priority",
+				"product",
+				"product_name",
+				"quantity",
+				"rate",
+				"remaining_value",
+				"start_date",
+				"status",
+				"subledger",
+				"tags",
+				"total_value",
+				"unit",
+				"usage_pricing",
+				"usage_pricing_terms"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/prepaid-commits/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/subscriptions": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"billing_cadence",
+				"billing_payment_term",
+				"billing_timing",
+				"catchup_date",
+				"catchup_manually_overridden",
+				"contract",
+				"contract_product_bundle",
+				"counts_toward_mrr",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"discount",
+				"end_date",
+				"external_id",
+				"first_invoice_date",
+				"id",
+				"invoice_calculation",
+				"invoiced_amount_migration",
+				"is_contract_amendment",
+				"is_deleted",
+				"last_modified_at",
+				"lines",
+				"modified_subscription",
+				"mrr",
+				"notes",
+				"period_amount",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_is_renewable",
+				"product_name",
+				"proration_method",
+				"quantity",
+				"rate",
+				"rates_are_net",
+				"relative_prepaid_commit",
+				"renewal_behavior",
+				"revenue_recognition_type",
+				"source",
+				"start_date",
+				"total_value",
+				"use_catchup",
+				"use_daily_accounting"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/subscriptions/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"billing_cadence",
+				"billing_payment_term",
+				"billing_timing",
+				"catchup_date",
+				"catchup_manually_overridden",
+				"contract",
+				"contract_product_bundle",
+				"counts_toward_mrr",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"discount",
+				"end_date",
+				"external_id",
+				"first_invoice_date",
+				"id",
+				"invoice_calculation",
+				"invoiced_amount_migration",
+				"is_contract_amendment",
+				"is_deleted",
+				"last_modified_at",
+				"lines",
+				"modified_subscription",
+				"mrr",
+				"notes",
+				"period_amount",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_is_renewable",
+				"product_name",
+				"proration_method",
+				"quantity",
+				"rate",
+				"rates_are_net",
+				"relative_prepaid_commit",
+				"renewal_behavior",
+				"revenue_recognition_type",
+				"source",
+				"start_date",
+				"total_value",
+				"use_catchup",
+				"use_daily_accounting"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"billing_cadence",
+				"billing_payment_term",
+				"billing_timing",
+				"catchup_date",
+				"catchup_manually_overridden",
+				"contract",
+				"contract_product_bundle",
+				"counts_toward_mrr",
+				"created_at",
+				"customer",
+				"deleted_at",
+				"discount",
+				"end_date",
+				"external_id",
+				"first_invoice_date",
+				"id",
+				"invoice_calculation",
+				"invoiced_amount_migration",
+				"is_contract_amendment",
+				"is_deleted",
+				"last_modified_at",
+				"lines",
+				"modified_subscription",
+				"mrr",
+				"notes",
+				"period_amount",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_is_renewable",
+				"product_name",
+				"proration_method",
+				"quantity",
+				"rate",
+				"rates_are_net",
+				"relative_prepaid_commit",
+				"renewal_behavior",
+				"revenue_recognition_type",
+				"source",
+				"start_date",
+				"total_value",
+				"use_catchup",
+				"use_daily_accounting"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/subscriptions/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/subscriptions/{id}/full-reversal": {
+		"POST": {
+			"query": [],
+			"body": [
+				"effective_date",
+				"reason"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/subscriptions/{subscription_id}/allocations": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"lines"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"lines"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/tier-price-overrides": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"contract",
+				"created_at",
+				"deal_name",
+				"external_reference",
+				"id",
+				"integration_name",
+				"last_modified_at",
+				"notes",
+				"percentage",
+				"price",
+				"source",
+				"tier",
+				"tier_name",
+				"usage_group_id",
+				"usage_group_name"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/usage": {
+		"GET": {
+			"query": [
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"contract",
+				"contract_product_bundle",
+				"created_at",
+				"department",
+				"description",
+				"end_date",
+				"id",
+				"last_modified_at",
+				"lines",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_name",
+				"start_date",
+				"tags",
+				"usage_group",
+				"usage_group_name"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/usage/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"contract",
+				"contract_product_bundle",
+				"created_at",
+				"department",
+				"description",
+				"end_date",
+				"id",
+				"last_modified_at",
+				"lines",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_name",
+				"start_date",
+				"tags",
+				"usage_group",
+				"usage_group_name"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"contract",
+				"contract_product_bundle",
+				"created_at",
+				"department",
+				"description",
+				"end_date",
+				"id",
+				"last_modified_at",
+				"lines",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_name",
+				"start_date",
+				"tags",
+				"usage_group",
+				"usage_group_name"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/usage/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{contract_id}/usage/{usage_id}/allocations": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"lines"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"lines"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"attachments",
+				"auto_apply_customer_stripe_config_to_invoices",
+				"auto_renew",
+				"auto_renew_duration",
+				"auto_renew_invoice",
+				"auto_send_invoices",
+				"billing_address",
+				"billing_addressee",
+				"billing_frequency",
+				"client",
+				"client_campfire_id",
+				"client_name",
+				"client_terms",
+				"closed_date",
+				"consultant",
+				"contract_end_date",
+				"contract_link",
+				"contract_start_date",
+				"created_at",
+				"crm_link",
+				"currency",
+				"customer",
+				"deal_id",
+				"deal_name",
+				"default_payment_term",
+				"default_payment_term_name",
+				"deleted_at",
+				"department",
+				"department_name",
+				"effective_end_date",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"evergreen_date_boundary_mode",
+				"evergreen_locked_date",
+				"exchange_rate",
+				"exchange_rate_book",
+				"exclude_from_tax_connection",
+				"has_credit_memos",
+				"has_invoices",
+				"has_journal_entries",
+				"id",
+				"invoice_cc_emails",
+				"invoice_email",
+				"is_deleted",
+				"is_evergreen",
+				"journal_entries",
+				"last_modified_at",
+				"minimum_monthly_commitment_amount",
+				"minimum_monthly_commitment_quantity",
+				"monthly_billing_alignment_locked",
+				"monthly_billing_period_alignment",
+				"parent_department",
+				"parent_department_name",
+				"prepaid_commits",
+				"purchase_order_number",
+				"search_text",
+				"search_vector",
+				"shipping_address",
+				"shipping_addressee",
+				"skip_evergreen_invoice_generation",
+				"source",
+				"source_deal_data",
+				"status",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"tax_exempt",
+				"termination_date",
+				"total_contract_value",
+				"total_deferred_revenue",
+				"total_mrr",
+				"total_revenue",
+				"usage_tiers",
+				"vat_number",
+				"working_end_date"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"attachments",
+				"auto_apply_customer_stripe_config_to_invoices",
+				"auto_renew",
+				"auto_renew_duration",
+				"auto_renew_invoice",
+				"auto_send_invoices",
+				"billing_address",
+				"billing_addressee",
+				"billing_frequency",
+				"client",
+				"client_campfire_id",
+				"client_name",
+				"client_terms",
+				"closed_date",
+				"consultant",
+				"contract_end_date",
+				"contract_link",
+				"contract_start_date",
+				"created_at",
+				"crm_link",
+				"currency",
+				"customer",
+				"deal_id",
+				"deal_name",
+				"default_payment_term",
+				"default_payment_term_name",
+				"deleted_at",
+				"department",
+				"department_name",
+				"effective_end_date",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"evergreen_date_boundary_mode",
+				"evergreen_locked_date",
+				"exchange_rate",
+				"exchange_rate_book",
+				"exclude_from_tax_connection",
+				"has_credit_memos",
+				"has_invoices",
+				"has_journal_entries",
+				"id",
+				"invoice_cc_emails",
+				"invoice_email",
+				"is_deleted",
+				"is_evergreen",
+				"journal_entries",
+				"last_modified_at",
+				"minimum_monthly_commitment_amount",
+				"minimum_monthly_commitment_quantity",
+				"monthly_billing_alignment_locked",
+				"monthly_billing_period_alignment",
+				"parent_department",
+				"parent_department_name",
+				"prepaid_commits",
+				"purchase_order_number",
+				"search_text",
+				"search_vector",
+				"shipping_address",
+				"shipping_addressee",
+				"skip_evergreen_invoice_generation",
+				"source",
+				"source_deal_data",
+				"status",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"tax_exempt",
+				"termination_date",
+				"total_contract_value",
+				"total_deferred_revenue",
+				"total_mrr",
+				"total_revenue",
+				"usage_tiers",
+				"vat_number",
+				"working_end_date"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{id}/duplicate": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{id}/minimum-commit-preview": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{id}/subledger-accounts": {
+		"GET": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/{id}/terminate": {
+		"POST": {
+			"query": [],
+			"body": [
+				"credit_unused_revenue",
+				"reverse_remaining_revenue",
+				"successor_contract_id",
+				"successor_target_id",
+				"successor_target_kind",
+				"termination_date",
+				"void_date",
+				"void_invoice_ids"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/{id}/termination-settlement-preview": {
+		"GET": {
+			"query": [
+				"credit_unused_revenue",
+				"termination_date"
+			],
+			"body": []
+		}
+	},
+	"/rr/api/v1/contracts/bulk-search": {
+		"POST": {
+			"query": [],
+			"body": [
+				"contracts"
+			]
+		}
+	},
+	"/rr/api/v1/contracts/parse": {
+		"POST": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/customers": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		}
+	},
+	"/rr/api/v1/customers/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"abbreviation",
+				"active_contracts",
+				"address_street_1",
+				"address_street_2",
+				"anrok_customer_id",
+				"avalara_customer_id",
+				"bill_vendor_id",
+				"billing_address_street_1",
+				"billing_address_street_2",
+				"billing_addressee",
+				"billing_city",
+				"billing_country",
+				"billing_state",
+				"billing_zip_code",
+				"business_category",
+				"business_id_ssn",
+				"business_type",
+				"campfire_id",
+				"city",
+				"company_name",
+				"completed_contracts",
+				"contacts",
+				"country",
+				"created_at",
+				"credit_memo_applied",
+				"credit_memo_available",
+				"currency",
+				"customer",
+				"dba",
+				"default_expense_category",
+				"deleted_at",
+				"display_name",
+				"email",
+				"entity_use_code",
+				"external_id",
+				"first_name",
+				"id",
+				"invoice_labels",
+				"invoice_language",
+				"invoice_message",
+				"is_1099",
+				"is_deleted",
+				"is_reseller",
+				"ita_deduction_type_code",
+				"ita_vendor_entity_code",
+				"ita_vendor_entity_type",
+				"last_modified_at",
+				"last_name",
+				"lineage_array",
+				"mobile_number",
+				"name",
+				"netsuite_customer_id",
+				"notes",
+				"parent",
+				"parent_name",
+				"payment_term",
+				"payment_term_name_display",
+				"pending_contracts",
+				"phone_number",
+				"search_text",
+				"search_vector",
+				"shipping_addressee",
+				"source",
+				"state",
+				"status",
+				"stripe_connection",
+				"stripe_connection_entity",
+				"stripe_connection_invoicing_enabled",
+				"stripe_connection_name",
+				"stripe_connection_portal_enabled",
+				"stripe_connection_portal_url",
+				"stripe_customer_id",
+				"terms",
+				"total_billed",
+				"total_contracts",
+				"total_credit_memos",
+				"total_deferred_revenue",
+				"total_mrr",
+				"total_outstanding",
+				"total_paid",
+				"total_revenue",
+				"total_unbilled",
+				"use_stripe_auto_bill",
+				"vat_number",
+				"vendor_custom_field_1",
+				"vendor_custom_field_1_name",
+				"vendor_type",
+				"website",
+				"withholding_tax_id",
+				"zip_code"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"abbreviation",
+				"active_contracts",
+				"address_street_1",
+				"address_street_2",
+				"anrok_customer_id",
+				"avalara_customer_id",
+				"bill_vendor_id",
+				"billing_address_street_1",
+				"billing_address_street_2",
+				"billing_addressee",
+				"billing_city",
+				"billing_country",
+				"billing_state",
+				"billing_zip_code",
+				"business_category",
+				"business_id_ssn",
+				"business_type",
+				"campfire_id",
+				"city",
+				"company_name",
+				"completed_contracts",
+				"contacts",
+				"country",
+				"created_at",
+				"credit_memo_applied",
+				"credit_memo_available",
+				"currency",
+				"customer",
+				"dba",
+				"default_expense_category",
+				"deleted_at",
+				"display_name",
+				"email",
+				"entity_use_code",
+				"external_id",
+				"first_name",
+				"id",
+				"invoice_labels",
+				"invoice_language",
+				"invoice_message",
+				"is_1099",
+				"is_deleted",
+				"is_reseller",
+				"ita_deduction_type_code",
+				"ita_vendor_entity_code",
+				"ita_vendor_entity_type",
+				"last_modified_at",
+				"last_name",
+				"lineage_array",
+				"mobile_number",
+				"name",
+				"netsuite_customer_id",
+				"notes",
+				"parent",
+				"parent_name",
+				"payment_term",
+				"payment_term_name_display",
+				"pending_contracts",
+				"phone_number",
+				"search_text",
+				"search_vector",
+				"shipping_addressee",
+				"source",
+				"state",
+				"status",
+				"stripe_connection",
+				"stripe_connection_entity",
+				"stripe_connection_invoicing_enabled",
+				"stripe_connection_name",
+				"stripe_connection_portal_enabled",
+				"stripe_connection_portal_url",
+				"stripe_customer_id",
+				"terms",
+				"total_billed",
+				"total_contracts",
+				"total_credit_memos",
+				"total_deferred_revenue",
+				"total_mrr",
+				"total_outstanding",
+				"total_paid",
+				"total_revenue",
+				"total_unbilled",
+				"use_stripe_auto_bill",
+				"vat_number",
+				"vendor_custom_field_1",
+				"vendor_custom_field_1_name",
+				"vendor_type",
+				"website",
+				"withholding_tax_id",
+				"zip_code"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/modify-subscription-schedule": {
+		"POST": {
+			"query": [],
+			"body": [
+				"apply_prospectively",
+				"billing_cadence",
+				"billing_timing",
+				"catchup_date",
+				"does_modify_contract_end_date",
+				"end_date",
+				"first_invoice_date",
+				"modified_subscription",
+				"monthly_billing_period_alignment",
+				"mrr",
+				"proration_method",
+				"revenue_recognition_type",
+				"start_date",
+				"total_value",
+				"use_catchup",
+				"use_daily_accounting"
+			]
+		}
+	},
+	"/rr/api/v1/product": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"anrok_item_id",
+				"apply_dept_tag_to_invoice_journals",
+				"ar_account",
+				"ar_account_name",
+				"avalara_item_data",
+				"avalara_item_id",
+				"avalara_tax_code",
+				"bad_debt_account",
+				"bad_debt_account_name",
+				"bundled_usage_revenue_recognition_type",
+				"cost",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"display_name",
+				"exclude_from_mrr",
+				"id",
+				"invoice_account",
+				"invoice_account_name",
+				"invoice_unbilled_account",
+				"invoice_unbilled_account_name",
+				"is_deleted",
+				"is_immediate_recognition",
+				"is_renewable",
+				"is_taxable",
+				"last_modified_at",
+				"netsuite_item_id",
+				"price",
+				"product_description",
+				"product_id",
+				"product_name",
+				"product_uuid",
+				"recognize_revenue",
+				"revenue_account",
+				"revenue_account_name",
+				"sphere_item_id",
+				"stripe_product_id",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"tax_account_name",
+				"usage_group_count",
+				"usage_groups",
+				"usage_price_unit"
+			]
+		}
+	},
+	"/rr/api/v1/product-bundles": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"anrok_item_id",
+				"bundle_description",
+				"bundle_name",
+				"created_at",
+				"deleted_at",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"lines",
+				"stripe_product_id"
+			]
+		}
+	},
+	"/rr/api/v1/product-bundles/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"anrok_item_id",
+				"bundle_description",
+				"bundle_name",
+				"created_at",
+				"deleted_at",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"lines",
+				"stripe_product_id"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"anrok_item_id",
+				"bundle_description",
+				"bundle_name",
+				"created_at",
+				"deleted_at",
+				"id",
+				"is_deleted",
+				"last_modified_at",
+				"lines",
+				"stripe_product_id"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/product/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"anrok_item_id",
+				"apply_dept_tag_to_invoice_journals",
+				"ar_account",
+				"ar_account_name",
+				"avalara_item_data",
+				"avalara_item_id",
+				"avalara_tax_code",
+				"bad_debt_account",
+				"bad_debt_account_name",
+				"bundled_usage_revenue_recognition_type",
+				"cost",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"display_name",
+				"exclude_from_mrr",
+				"id",
+				"invoice_account",
+				"invoice_account_name",
+				"invoice_unbilled_account",
+				"invoice_unbilled_account_name",
+				"is_deleted",
+				"is_immediate_recognition",
+				"is_renewable",
+				"is_taxable",
+				"last_modified_at",
+				"netsuite_item_id",
+				"price",
+				"product_description",
+				"product_id",
+				"product_name",
+				"product_uuid",
+				"recognize_revenue",
+				"revenue_account",
+				"revenue_account_name",
+				"sphere_item_id",
+				"stripe_product_id",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"tax_account_name",
+				"usage_group_count",
+				"usage_groups",
+				"usage_price_unit"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"anrok_item_id",
+				"apply_dept_tag_to_invoice_journals",
+				"ar_account",
+				"ar_account_name",
+				"avalara_item_data",
+				"avalara_item_id",
+				"avalara_tax_code",
+				"bad_debt_account",
+				"bad_debt_account_name",
+				"bundled_usage_revenue_recognition_type",
+				"cost",
+				"created_at",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"display_name",
+				"exclude_from_mrr",
+				"id",
+				"invoice_account",
+				"invoice_account_name",
+				"invoice_unbilled_account",
+				"invoice_unbilled_account_name",
+				"is_deleted",
+				"is_immediate_recognition",
+				"is_renewable",
+				"is_taxable",
+				"last_modified_at",
+				"netsuite_item_id",
+				"price",
+				"product_description",
+				"product_id",
+				"product_name",
+				"product_uuid",
+				"recognize_revenue",
+				"revenue_account",
+				"revenue_account_name",
+				"sphere_item_id",
+				"stripe_product_id",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"tax_account_name",
+				"usage_group_count",
+				"usage_groups",
+				"usage_price_unit"
+			]
+		},
+		"DELETE": {
+			"query": [
+				"new_product"
+			],
+			"body": []
+		}
+	},
+	"/rr/api/v1/product/{id}/delete": {
+		"POST": {
+			"query": [
+				"new_product"
+			],
+			"body": [
+				"reason"
+			]
+		}
+	},
+	"/rr/api/v1/product/bulk-search": {
+		"POST": {
+			"query": [],
+			"body": [
+				"products"
+			]
+		}
+	},
+	"/rr/api/v1/transactions": {
+		"GET": {
+			"query": [
+				"include_deleted",
+				"last_modified_at__gte",
+				"last_modified_at__lte",
+				"limit",
+				"offset"
+			],
+			"body": []
+		},
+		"POST": {
+			"query": [],
+			"body": [
+				"accounting_period",
+				"amount",
+				"anrok_item_id",
+				"balance_adjustment",
+				"billed_amount",
+				"client",
+				"client_campfire_id",
+				"client_external_id",
+				"client_identifier",
+				"client_name",
+				"contract",
+				"contract_bundle",
+				"contract_external_id",
+				"contract_identifier",
+				"contract_milestone",
+				"contract_name",
+				"contract_product_bundle",
+				"contract_status",
+				"contract_subscription",
+				"contract_subscription_external_id",
+				"contract_subscription_notes",
+				"contract_usage",
+				"counts_toward_mrr",
+				"created_at",
+				"credit_memo",
+				"credit_memo_application_status",
+				"credit_memo_date",
+				"credit_memo_number",
+				"credit_memo_voided_date",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"description",
+				"discount",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"external_id",
+				"funding_revenue_transaction",
+				"gross_amount",
+				"id",
+				"invoice",
+				"invoice_date",
+				"invoice_number",
+				"invoice_payment_status",
+				"invoice_voided_date",
+				"is_deleted",
+				"is_migration_invoiced",
+				"journal_entry",
+				"journal_entry_order",
+				"last_modified_at",
+				"mrr",
+				"non_contract_subscription",
+				"non_contract_usage",
+				"parent_department",
+				"parent_department_name",
+				"platform_fees",
+				"prepaid_commit",
+				"processing_fees",
+				"producer",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_external_id",
+				"product_identifier",
+				"product_is_taxable",
+				"product_name",
+				"quantity",
+				"rate",
+				"recognized",
+				"refunds",
+				"renewall",
+				"revenue_type",
+				"reverses_revenue_transaction",
+				"scheduled_invoice_date",
+				"source",
+				"sphere_item_id",
+				"subscription_discount",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"tax",
+				"transaction_date",
+				"transaction_end_date",
+				"transfers",
+				"usage_tier",
+				"usage_tier_name",
+				"warehouse_row_key"
+			]
+		}
+	},
+	"/rr/api/v1/transactions/{id}": {
+		"GET": {
+			"query": [],
+			"body": []
+		},
+		"PUT": {
+			"query": [],
+			"body": [
+				"accounting_period",
+				"amount",
+				"anrok_item_id",
+				"balance_adjustment",
+				"billed_amount",
+				"client",
+				"client_campfire_id",
+				"client_external_id",
+				"client_identifier",
+				"client_name",
+				"contract",
+				"contract_bundle",
+				"contract_external_id",
+				"contract_identifier",
+				"contract_milestone",
+				"contract_name",
+				"contract_product_bundle",
+				"contract_status",
+				"contract_subscription",
+				"contract_subscription_external_id",
+				"contract_subscription_notes",
+				"contract_usage",
+				"counts_toward_mrr",
+				"created_at",
+				"credit_memo",
+				"credit_memo_application_status",
+				"credit_memo_date",
+				"credit_memo_number",
+				"credit_memo_voided_date",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"description",
+				"discount",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"external_id",
+				"funding_revenue_transaction",
+				"gross_amount",
+				"id",
+				"invoice",
+				"invoice_date",
+				"invoice_number",
+				"invoice_payment_status",
+				"invoice_voided_date",
+				"is_deleted",
+				"is_migration_invoiced",
+				"journal_entry",
+				"journal_entry_order",
+				"last_modified_at",
+				"mrr",
+				"non_contract_subscription",
+				"non_contract_usage",
+				"parent_department",
+				"parent_department_name",
+				"platform_fees",
+				"prepaid_commit",
+				"processing_fees",
+				"producer",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_external_id",
+				"product_identifier",
+				"product_is_taxable",
+				"product_name",
+				"quantity",
+				"rate",
+				"recognized",
+				"refunds",
+				"renewall",
+				"revenue_type",
+				"reverses_revenue_transaction",
+				"scheduled_invoice_date",
+				"source",
+				"sphere_item_id",
+				"subscription_discount",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"tax",
+				"transaction_date",
+				"transaction_end_date",
+				"transfers",
+				"usage_tier",
+				"usage_tier_name",
+				"warehouse_row_key"
+			]
+		},
+		"PATCH": {
+			"query": [],
+			"body": [
+				"accounting_period",
+				"amount",
+				"anrok_item_id",
+				"balance_adjustment",
+				"billed_amount",
+				"client",
+				"client_campfire_id",
+				"client_external_id",
+				"client_identifier",
+				"client_name",
+				"contract",
+				"contract_bundle",
+				"contract_external_id",
+				"contract_identifier",
+				"contract_milestone",
+				"contract_name",
+				"contract_product_bundle",
+				"contract_status",
+				"contract_subscription",
+				"contract_subscription_external_id",
+				"contract_subscription_notes",
+				"contract_usage",
+				"counts_toward_mrr",
+				"created_at",
+				"credit_memo",
+				"credit_memo_application_status",
+				"credit_memo_date",
+				"credit_memo_number",
+				"credit_memo_voided_date",
+				"currency",
+				"customer",
+				"deleted_at",
+				"department",
+				"department_name",
+				"description",
+				"discount",
+				"entity",
+				"entity_currency",
+				"entity_name",
+				"exchange_rate",
+				"exchange_rate_book",
+				"external_id",
+				"funding_revenue_transaction",
+				"gross_amount",
+				"id",
+				"invoice",
+				"invoice_date",
+				"invoice_number",
+				"invoice_payment_status",
+				"invoice_voided_date",
+				"is_deleted",
+				"is_migration_invoiced",
+				"journal_entry",
+				"journal_entry_order",
+				"last_modified_at",
+				"mrr",
+				"non_contract_subscription",
+				"non_contract_usage",
+				"parent_department",
+				"parent_department_name",
+				"platform_fees",
+				"prepaid_commit",
+				"processing_fees",
+				"producer",
+				"product",
+				"product_bundle",
+				"product_bundle_name",
+				"product_external_id",
+				"product_identifier",
+				"product_is_taxable",
+				"product_name",
+				"quantity",
+				"rate",
+				"recognized",
+				"refunds",
+				"renewall",
+				"revenue_type",
+				"reverses_revenue_transaction",
+				"scheduled_invoice_date",
+				"source",
+				"sphere_item_id",
+				"subscription_discount",
+				"tag_group_ids",
+				"tag_ids",
+				"tags",
+				"tax",
+				"transaction_date",
+				"transaction_end_date",
+				"transfers",
+				"usage_tier",
+				"usage_tier_name",
+				"warehouse_row_key"
+			]
+		},
+		"DELETE": {
+			"query": [],
+			"body": []
+		}
+	},
+	"/rr/api/v1/transactions/{id}/delete": {
+		"POST": {
+			"query": [],
+			"body": [
+				"reason"
+			]
+		}
+	}
+}
