@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-campfire",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n community node for Campfire ERP: bills, invoices, journal entries, contracts, chart of accounts, master data, files, reports and webhooks",
 	"license": "MIT",
 	"homepage": "https://github.com/brngts/n8n-nodes-campfire#readme",
